@@ -1,0 +1,129 @@
+// prisma/schema.prisma
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String    @id @default(cuid())
+  email     String    @unique
+  role      Role      @default(VISITOR)
+  createdAt DateTime  @default(now())
+  inquiries Inquiry[]
+}
+
+enum Role {
+  VISITOR
+  ADMIN
+}
+
+model Service {
+  id           String          @id @default(cuid())
+  slug         String          @unique
+  title        String
+  description  String
+  includes     Json
+  excludes     Json
+  process      Json
+  deliverables Json
+  priceFrom    Int
+  category     ServiceCategory
+  isActive     Boolean         @default(true)
+  order        Int
+  createdAt    DateTime        @default(now())
+  updatedAt    DateTime        @updatedAt
+}
+
+enum ServiceCategory {
+  PRODUCCION
+  EDICION
+  BRANDING
+  ESTRATEGIA
+}
+
+model PortfolioItem {
+  id           String            @id @default(cuid())
+  slug         String            @unique
+  title        String
+  description  String?
+  category     PortfolioCategory
+  mediaUrl     String
+  mediaType    MediaType
+  thumbnailUrl String?
+  tags         Json
+  metrics      Json?
+  clientName   String?
+  isActive     Boolean           @default(true)
+  order        Int
+  createdAt    DateTime          @default(now())
+}
+
+enum PortfolioCategory {
+  REELS
+  BRANDING
+  TURISMO
+  INSTITUCIONAL
+  LIFESTYLE
+  ECOMMERCE
+}
+
+enum MediaType {
+  VIDEO
+  IMAGE
+}
+
+model BlogPost {
+  id          String    @id @default(cuid())
+  slug        String    @unique
+  title       String
+  excerpt     String
+  content     String
+  coverImage  String?
+  tags        Json
+  isPublished Boolean   @default(false)
+  publishedAt DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Inquiry {
+  id        String        @id @default(cuid())
+  userId    String?
+  user      User?         @relation(fields: [userId], references: [id])
+  name      String
+  email     String
+  phone     String?
+  serviceId String?
+  message   String
+  status    InquiryStatus @default(PENDING)
+  createdAt DateTime      @default(now())
+}
+
+enum InquiryStatus {
+  PENDING
+  CONTACTED
+  CLOSED
+}
+
+model Resource {
+  id          String       @id @default(cuid())
+  title       String
+  description String
+  fileUrl     String
+  type        ResourceType
+  downloads   Int          @default(0)
+  isActive    Boolean      @default(true)
+  createdAt   DateTime     @default(now())
+}
+
+enum ResourceType {
+  GUIA
+  CHECKLIST
+  EBOOK
+  TEMPLATE
+  PACK
+}
