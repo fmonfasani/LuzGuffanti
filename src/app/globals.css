@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+
+
+/* 🎨 Tema oscuro pastel personalizado */
+@theme {
+  --color-bg: #0f0f1a;         /* fondo general más oscuro */
+  --color-text: #f5f5f5;       /* texto claro */
+  --color-primary: #b388ff;    /* violeta pastel oscuro */
+  --color-accent: #ff;
+}
+
+html, body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+}
