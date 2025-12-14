@@ -1,8 +1,17 @@
 import './globals.css'
-import { Inter, Oswald } from 'next/font/google'
+import { Cormorant_Garamond, Karla } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
-const oswald = Oswald({ subsets: ['latin'], variable: '--font-oswald' })
+const cormorant = Cormorant_Garamond({ 
+  subsets: ['latin'], 
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-display' 
+})
+
+const karla = Karla({ 
+  subsets: ['latin'], 
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-body' 
+})
 
 export const metadata = {
   title: 'Luz Guffanti',
@@ -12,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es">
-      <body className={`${inter.variable} ${oswald.variable} font-sans`}>
+      <body className={`${cormorant.variable} ${karla.variable} font-body`}>
         {children}
       </body>
     </html>

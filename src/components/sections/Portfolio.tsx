@@ -1,60 +1,47 @@
 "use client";
 
-import { motion } from "framer-motion";
-
-interface PortfolioItemProps {
-  title: string;
-  index: number;
-}
-
-function PortfolioItem({ title, index }: PortfolioItemProps) {
-  // Alternate gradient direction
-  const isEven = index % 2 === 0;
-  const gradientClass = isEven
-    ? "bg-gradient-to-r from-[#ffcce0] to-[#fff9c4]"
-    : "bg-gradient-to-r from-[#fff9c4] to-[#ffcce0]";
-
-  return (
-    <section className={`relative min-h-screen w-full overflow-hidden flex ${gradientClass}`}>
-      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-8 md:px-16 lg:px-20 py-12">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          <h2 className="font-oswald text-5xl md:text-6xl lg:text-7xl font-bold text-[#333333] tracking-tighter uppercase mb-12">
-            {title}
-          </h2>
-
-          {/* Placeholder for content */}
-          <div className="flex items-center justify-center">
-            <div className="w-full max-w-4xl h-[400px] flex items-center justify-center">
-              {/* Content will go here - videos, images, etc */}
-            </div>
-          </div>
-        </motion.div>
-      </div>
-    </section>
-  );
-}
+import { useState } from "react";
+import { PortfolioTab } from "../PortfolioTab";
+import { PortfolioItem } from "../PortfolioItem";
+import { portfolioCategories } from "../../data/portfolio";
 
 export function Portfolio() {
-  const portfolioItems = [
-    "UGC",
-    "TURISMO",
-    "JETSMART",
-    "INSTITUCIONAL",
-    "ASMR",
-    "ECOMMERCE",
-    "REAL STATE"
-  ];
+  const [activeCategory, setActiveCategory] = useState(portfolioCategories[0].id);
+
+  const activeCategoryData = portfolioCategories.find(
+    category => category.id === activeCategory
+  ) || portfolioCategories[0];
 
   return (
-    <div id="videos">
-      {portfolioItems.map((item, index) => (
-        <PortfolioItem key={index} title={item} index={index} />
-      ))}
-    </div>
+    <section id="portfolio" className="py-20 bg-background-light dark:bg-background-dark">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-display font-bold text-center text-primary mb-12">
+          Portafolio
+        </h2>
+
+        {/* Tabs */}
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
+          {portfolioCategories.map((category) => (
+            <PortfolioTab
+              key={category.id}
+              label={category.label}
+              isActive={activeCategory === category.id}
+              onClick={() => setActiveCategory(category.id)}
+            />
+          ))}
+        </div>
+
+        {/* Portfolio Items Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {activeCategoryData.items.map((item, index) => (
+            <PortfolioItem
+              key={index}
+              videoSrc={item.videoSrc}
+              alt={item.alt}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }

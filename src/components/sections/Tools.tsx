@@ -1,58 +1,39 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Plus } from "lucide-react";
+import Image from "next/image";
+import { tools } from "../../data/portfolio";
 
 export function Tools() {
-    const tools = [
-        "CAPCUT",
-        "ADOBE PREMIERE",
-        "ADOBE PHOTOSHOP",
-        "CANVA",
-        "CHATGPT",
-        "NOTION"
-    ];
+  return (
+    <section id="tools" className="py-20 bg-section-light dark:bg-section-dark">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-display font-bold text-center text-primary mb-12">
+          Herramientas
+        </h2>
 
-    return (
-        <section id="herramientas" className="relative min-h-screen w-full overflow-hidden flex items-center justify-center bg-white">
-            <div className="relative z-10 w-full max-w-[1400px] mx-auto px-8 md:px-16 lg:px-20 py-20">
-                <motion.div
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
-                    className="text-center"
-                >
-                    <h2 className="font-oswald text-6xl md:text-7xl lg:text-8xl font-bold text-[#333333] tracking-tighter uppercase mb-8">
-                        HERRAMIENTAS DE TRABAJO
-                    </h2>
+        <div className="border-t-2 border-dashed border-primary my-8"></div>
 
-                    {/* Decorative Plus Signs */}
-                    <div className="flex gap-4 mb-12 justify-center">
-                        <Plus className="w-8 h-8 text-[#333333]" />
-                        <Plus className="w-8 h-8 text-[#333333]" />
-                        <Plus className="w-8 h-8 text-[#333333]" />
-                    </div>
-
-                    {/* Tools Grid */}
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-                        {tools.map((tool, index) => (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, scale: 0.9 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.5, delay: index * 0.1 }}
-                                className="flex items-center justify-center"
-                            >
-                                <p className="font-oswald text-2xl md:text-3xl font-bold text-[#333333] uppercase tracking-wide">
-                                    {tool}
-                                </p>
-                            </motion.div>
-                        ))}
-                    </div>
-                </motion.div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {tools.map((tool, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center justify-center p-6 bg-card-light dark:bg-card-dark rounded-lg shadow-sm"
+            >
+              <div className="relative w-24 h-24 mb-4">
+                <Image
+                  src={tool.imageSrc}
+                  alt={tool.name}
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <h3 className="text-lg font-body font-semibold text-center">{tool.name}</h3>
             </div>
-        </section>
-    );
+          ))}
+        </div>
+
+        <div className="border-b-2 border-dashed border-primary my-8"></div>
+      </div>
+    </section>
+  );
 }
