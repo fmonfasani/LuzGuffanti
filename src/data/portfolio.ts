@@ -6,10 +6,10 @@ export const portfolioCategories = [
     id: 'viajes',
     label: 'Viajes',
     items: [
-      { videoSrc: '/Videos/Porfolio/Viajes/2.mov', alt: 'Viaje 1' },
-      { videoSrc: '/Videos/Porfolio/Viajes/4.mov', alt: 'Viaje 2' },
-      { videoSrc: '/Videos/Porfolio/Viajes/3.mov', alt: 'Viaje 3' },
-      { videoSrc: '/Videos/Porfolio/Viajes/1.mov', alt: 'Viaje 4' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Viaje 1' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Viaje 2' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Viaje 3' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Viaje 4' },
     ],
   },
 
@@ -18,10 +18,10 @@ export const portfolioCategories = [
     id: 'jetsmart',
     label: 'JetSmart',
     items: [
-      { videoSrc: '/Videos/Porfolio/Jetsmart/1.mov', alt: 'JetSmart 1' },
-      { videoSrc: '/Videos/Porfolio/Jetsmart/2.mov', alt: 'JetSmart 2' },
-      { videoSrc: '/Videos/Porfolio/Jetsmart/3.mov', alt: 'JetSmart 3' },
-      { videoSrc: '/Videos/Porfolio/Jetsmart/4.mov', alt: 'JetSmart 4' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'JetSmart 1' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'JetSmart 2' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'JetSmart 3' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'JetSmart 4' },
     ],
   },
 
@@ -30,10 +30,10 @@ export const portfolioCategories = [
     id: 'eventos',
     label: 'Eventos',
     items: [
-      { videoSrc: '/Videos/Porfolio/Eventos/1.mov', alt: 'Evento 1' },
-      { videoSrc: '/Videos/Porfolio/Eventos/2.mov', alt: 'Evento 2' },
-      { videoSrc: '/Videos/Porfolio/Eventos/3.mov', alt: 'Evento 3' },
-      { videoSrc: '/Videos/Porfolio/Eventos/4.mov', alt: 'Evento 4' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Evento 1' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Evento 2' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Evento 3' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Evento 4' },
     ],
   },
 
@@ -42,10 +42,10 @@ export const portfolioCategories = [
     id: 'gastronomia',
     label: 'Gastronomía',
     items: [
-      { videoSrc: '/Videos/Porfolio/Gastronomía/1.mov', alt: 'Gastronomía 1' },
-      { videoSrc: '/Videos/Porfolio/Gastronomía/2.mov', alt: 'Gastronomía 2' },
-      { videoSrc: '/Videos/Porfolio/Gastronomía/3.mov', alt: 'Gastronomía 3' },
-      { videoSrc: '/Videos/Porfolio/Gastronomía/4.mp4', alt: 'Gastronomía 4' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Gastronomía 1' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Gastronomía 2' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Gastronomía 3' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Gastronomía 4' },
     ],
   },
 
@@ -54,11 +54,11 @@ export const portfolioCategories = [
     id: 'hoteleria-y-turismo',
     label: 'Hotelería y Turismo',
     items: [
-      { videoSrc: '/Videos/Porfolio/Hotelería y turismo/1.mov', alt: 'Hotelería y turismo 1' },
-      { videoSrc: '/Videos/Porfolio/Hotelería y turismo/2.mov', alt: 'Hotelería y turismo 2' },
-      { videoSrc: '/Videos/Porfolio/Hotelería y turismo/3.mov', alt: 'Hotelería y turismo 3' },
-      { videoSrc: '/Videos/Porfolio/Hotelería y turismo/4.mov', alt: 'Hotelería y turismo 4' },
-      { videoSrc: '/Videos/Porfolio/Hotelería y turismo/ASMR.mov', alt: 'Hotelería y turismo ASMR' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Hotelería y turismo 1' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Hotelería y turismo 2' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Hotelería y turismo 3' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Hotelería y turismo 4' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Hotelería y turismo ASMR' },
     ],
   },
 
@@ -67,10 +67,10 @@ export const portfolioCategories = [
     id: 'institucional',
     label: 'Institucional',
     items: [
-      { videoSrc: '/Videos/Porfolio/Institucional/1.mov', alt: 'Institucional 1' },
-      { videoSrc: '/Videos/Porfolio/Institucional/2.mov', alt: 'Institucional 2' },
-      { videoSrc: '/Videos/Porfolio/Institucional/3.mov', alt: 'Institucional 3' },
-      { videoSrc: '/Videos/Porfolio/Institucional/4.mov', alt: 'Institucional 4' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Institucional 1' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Institucional 2' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Institucional 3' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Institucional 4' },
     ],
   },
 
@@ -79,10 +79,10 @@ export const portfolioCategories = [
     id: 'real-state',
     label: 'Real Estate',
     items: [
-      { videoSrc: '/Videos/Porfolio/Real state/1.mov', alt: 'Real Estate 1' },
-      { videoSrc: '/Videos/Porfolio/Real state/2.mov', alt: 'Real Estate 2' },
-      { videoSrc: '/Videos/Porfolio/Real state/3.mov', alt: 'Real Estate 3' },
-      { videoSrc: '/Videos/Porfolio/Real state/4.mov', alt: 'Real Estate 4' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Real Estate 1' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Real Estate 2' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Real Estate 3' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Real Estate 4' },
     ],
   },
 
@@ -91,10 +91,10 @@ export const portfolioCategories = [
     id: 'ugc',
     label: 'UGC',
     items: [
-      { videoSrc: '/Videos/Porfolio/UGC/1.mov', alt: 'UGC 1' },
-      { videoSrc: '/Videos/Porfolio/UGC/2.mp4', alt: 'UGC 2' },
-      { videoSrc: '/Videos/Porfolio/UGC/3.mov', alt: 'UGC 3' },
-      { videoSrc: '/Videos/Porfolio/UGC/4.mov', alt: 'UGC 4' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'UGC 1' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'UGC 2' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'UGC 3' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'UGC 4' },
     ],
   },
   // Ecommerce
@@ -102,10 +102,10 @@ export const portfolioCategories = [
     id: 'ecommerce',
     label: 'Ecommerce',
     items: [
-      { videoSrc: '/Videos/Porfolio/Ecommerce/1.mov', alt: 'Ecommerce 1' },
-      { videoSrc: '/Videos/Porfolio/Ecommerce/3.mov', alt: 'Ecommerce 2' },
-      { videoSrc: '/Videos/Porfolio/Ecommerce/2.mov', alt: 'Ecommerce 3' },
-      { videoSrc: '/Videos/Porfolio/Ecommerce/4.mov', alt: 'Ecommerce 4' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Ecommerce 1' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Ecommerce 2' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Ecommerce 3' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Ecommerce 4' },
     ],
   },
   // VER SECCIÓN HUMOR -> show as Humor
@@ -113,8 +113,8 @@ export const portfolioCategories = [
     id: 'humor',
     label: 'Humor',
     items: [
-      { videoSrc: '/Videos/Porfolio/VER SECCIÓN HUMOR/1.mov', alt: 'Humor 1' },
-      { videoSrc: '/Videos/Porfolio/VER SECCIÓN HUMOR/2.mov', alt: 'Humor 2' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Humor 1' },
+      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Humor 2' },
     ],
   },
 ];
