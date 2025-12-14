@@ -6,9 +6,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#94634f", // Terracotta
+        "background-light": "#f6f3ed", // Beige
+        "background-dark": "#282623", // Dark Brown
+        "card-light": "#e9e4d9",
+        "card-dark": "#3d3a36",
+        "section-light": "#f0ece4",
+        "section-dark": "#33312e"
+      },
       fontFamily: {
-        sans: ['var(--font-inter)'],
-        oswald: ['var(--font-oswald)'],
+        display: ['"Cormorant Garamond"', "serif"],
+        body: ["Karla", "sans-serif"],
       },
     },
   },

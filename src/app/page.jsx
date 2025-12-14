@@ -1,22 +1,43 @@
 "use client";
+
+import { useState } from "react";
+import { Header } from "../components/Header";
 import { Hero } from "../components/sections/Hero";
-import { ContactForm } from "../components/forms/ContactForm";
-import { NavigationBanner } from "../components/sections/NavigationBanner";
-import { AboutMe } from "../components/sections/AboutMe";
-import { Services } from "../components/sections/Services";
+import { About } from "../components/sections/About";
 import { Portfolio } from "../components/sections/Portfolio";
 import { Tools } from "../components/sections/Tools";
+import { Services } from "../components/sections/Services";
+import { Testimonials } from "../components/sections/Testimonials";
+import { Contact } from "../components/sections/Contact";
+import { Footer } from "../components/Footer";
+import { ContactModal } from "../components/ContactModal";
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleCtaClick = () => {
+    setIsModalOpen(true);
+  };
+
   return (
     <>
-      <Hero onCtaClick={() => { }} />
-      <NavigationBanner />
-      <AboutMe />
+      <Header />
+      <Hero onCtaClick={handleCtaClick} />
+      <About />
       <Services />
       <Portfolio />
       <Tools />
-      <ContactForm />
+      <Testimonials />
+      <Contact />
+      <Footer />
+
+      {/* Contact Modal */}
+      <ContactModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        whatsappNumber="+5491112345678"
+        calendlyUrl="https://calendly.com/luzguffanti"
+      />
     </>
   );
 }
