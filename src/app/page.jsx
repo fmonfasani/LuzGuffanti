@@ -11,6 +11,7 @@ import { Testimonials } from "../components/sections/Testimonials";
 import { Contact } from "../components/sections/Contact";
 import { Footer } from "../components/Footer";
 import { ContactModal } from "../components/ContactModal";
+import { WhatsAppButton } from "../components/ui/WhatsAppButton";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -38,6 +39,7 @@ export default function Home() {
         whatsappNumber="+5491112345678"
         calendlyUrl="https://calendly.com/luzguffanti"
       />
+      <WhatsAppButton />
     </>
   );
 }

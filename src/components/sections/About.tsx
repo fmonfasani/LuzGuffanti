@@ -1,6 +1,6 @@
 "use client";
 
-import Image from 'next/image';
+import Image from "next/image";
 
 export function About() {
   return (
@@ -22,16 +22,25 @@ export function About() {
           {/* Text Content */}
           <div>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-6">
-              About Me
+              SOBRE MÍ
             </h2>
             <p className="text-gray-700 dark:text-gray-300 mb-4 text-lg leading-relaxed">
-              Soy una apasionada creadora de contenido con experiencia en la producción de videos UGC (User Generated Content) para marcas y empresas. Mi enfoque combina creatividad, autenticidad y estrategia para conectar marcas con su audiencia de manera efectiva.
+              Soy creadora de contenido UGC, filmmaker & editora de videos.
+              Trabajo con marcas y empresas que buscan comunicar su esencia de
+              forma creativa, estética, auténtica y profesional.
             </p>
             <p className="text-gray-700 dark:text-gray-300 mb-4 text-lg leading-relaxed">
-              Con una visión artística y un profundo conocimiento de las tendencias digitales, trabajo para potenciar la presencia en línea de mis clientes a través de contenido visual atractivo y significativo.
+              Me especializo en la producción de contenido para redes sociales,
+              combinando una mirada estratégica con un fuerte enfoque visual y
+              un profundo conocimiento de las tendencias digitales. Mi objetivo
+              es crear piezas que conecten con la audiencia y generen resultados
+              reales.
             </p>
             <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-              Mi objetivo es contar historias que inspiren, conecten y generen resultados tangibles para las marcas con las que colaboro.
+              Viajar es una de mis mayores fuentes de inspiración: me permite
+              observar, descubrir nuevas historias y capturar miradas distintas.
+              Cada proyecto es una oportunidad de transformar ideas en contenido
+              visual con identidad, sensibilidad y propósito.
             </p>
           </div>
         </div>
