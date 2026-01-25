@@ -6,17 +6,22 @@ import { PortfolioItem } from "../PortfolioItem";
 import { portfolioCategories } from "../../data/portfolio";
 
 export function Portfolio() {
-  const [activeCategory, setActiveCategory] = useState(portfolioCategories[0].id);
+  const [activeCategory, setActiveCategory] = useState(
+    portfolioCategories[0].id,
+  );
 
-  const activeCategoryData = portfolioCategories.find(
-    category => category.id === activeCategory
-  ) || portfolioCategories[0];
+  const activeCategoryData =
+    portfolioCategories.find((category) => category.id === activeCategory) ||
+    portfolioCategories[0];
 
   return (
-    <section id="portfolio" className="py-20 bg-background-light dark:bg-background-dark">
+    <section
+      id="portfolio"
+      className="py-20 bg-background-light dark:bg-background-dark"
+    >
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-display font-bold text-center text-primary mb-12">
-          Portafolio
+        <h2 className="text-3xl md:text-4xl font-display font-bold text-center text-primary mb-12 uppercase tracking-wider">
+          PORTFOLIO
         </h2>
 
         {/* Tabs */}
@@ -24,7 +29,7 @@ export function Portfolio() {
           {portfolioCategories.map((category) => (
             <PortfolioTab
               key={category.id}
-              label={category.label}
+              label={category.label.toUpperCase()}
               isActive={activeCategory === category.id}
               onClick={() => setActiveCategory(category.id)}
             />

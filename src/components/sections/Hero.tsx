@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from 'framer-motion';
-import Image from 'next/image';
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 type HeroProps = {
   onCtaClick: () => void;
@@ -27,32 +27,35 @@ export function Hero({ onCtaClick }: HeroProps) {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl">
         <motion.h1
-          className="text-4xl md:text-6xl font-display font-bold text-white mb-6"
+          className="text-4xl md:text-7xl font-display font-bold text-white mb-6 uppercase tracking-tighter"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Soy Luz Guffanti,<br />
-          creadora de contenido.
+          LUZ GUFFANTI
+          <br />
+          <span className="text-3xl md:text-5xl font-light">
+            CREADORA DE CONTENIDO
+          </span>
         </motion.h1>
 
         <motion.p
-          className="text-xl md:text-2xl text-white mb-10 max-w-2xl mx-auto"
+          className="text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto font-light italic"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Conecto marcas y personas a través de historias que inspiran.
+          "Transformando ideas en contenido visual con propósito."
         </motion.p>
 
         <motion.button
-          className="bg-primary text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-opacity-90 transition-all transform hover:scale-105"
+          className="bg-primary text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-opacity-90 transition-all transform hover:scale-105 uppercase tracking-widest shadow-xl"
           onClick={onCtaClick}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Trabajemos Juntos
+          TRABAJEMOS JUNTOS
         </motion.button>
       </div>
 
@@ -62,8 +65,19 @@ export function Hero({ onCtaClick }: HeroProps) {
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 1.5 }}
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            />
           </svg>
         </motion.div>
       </div>
