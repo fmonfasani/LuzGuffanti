@@ -6,10 +6,8 @@ export const portfolioCategories = [
     id: 'viajes',
     label: 'Viajes',
     items: [
-      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Viaje 1' },
-      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Viaje 2' },
-      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Viaje 3' },
-      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Viaje 4' },
+      { videoSrc: 'https://youtube.com/shorts/GiExniP8asg', alt: 'Viaje 1' },
+      { videoSrc: 'https://youtube.com/shorts/2cnjRXmCU7Q', alt: 'Viaje 2' },
     ],
   },
 
@@ -18,10 +16,10 @@ export const portfolioCategories = [
     id: 'jetsmart',
     label: 'JetSmart',
     items: [
-      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'JetSmart 1' },
-      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'JetSmart 2' },
-      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'JetSmart 3' },
-      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'JetSmart 4' },
+      { videoSrc: 'https://youtube.com/shorts/XFrloeOEhxc', alt: 'JetSmart 1' },
+      { videoSrc: 'https://youtube.com/shorts/hjRUgoeFSDc', alt: 'JetSmart 2' },
+      { videoSrc: 'https://youtube.com/shorts/gqSBzSdQTrE', alt: 'JetSmart 3' },
+      { videoSrc: 'https://youtube.com/shorts/TevXhD1cWyM', alt: 'JetSmart 4' },
     ],
   },
 
@@ -102,10 +100,10 @@ export const portfolioCategories = [
     id: 'ecommerce',
     label: 'Ecommerce',
     items: [
-      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Ecommerce 1' },
-      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Ecommerce 2' },
-      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Ecommerce 3' },
-      { videoSrc: 'https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO_DE_GOOGLE_DRIVE', alt: 'Ecommerce 4' },
+      { videoSrc: 'https://youtube.com/shorts/7szrmhtm9xA', alt: 'Ecommerce 1' },
+      { videoSrc: 'https://youtube.com/shorts/-0VNtqMAdKE', alt: 'Ecommerce 2' },
+      { videoSrc: 'https://youtube.com/shorts/rKdPMJhPAHw', alt: 'Ecommerce 3' },
+      { videoSrc: 'https://youtube.com/shorts/Icu4Y-s4K1s', alt: 'Ecommerce 4' },
     ],
   },
   // VER SECCIÓN HUMOR -> show as Humor
