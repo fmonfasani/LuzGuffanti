@@ -80,8 +80,8 @@ export function PortfolioItem({ videoSrc, alt }: PortfolioItemProps) {
           src={videoSrc}
           autoplay="on-scroll"
           loop
-          muted
-          controls={false}
+          muted={false}
+          controls={true}
           className="w-full h-full object-cover"
           transformation={{
             quality: "auto",
