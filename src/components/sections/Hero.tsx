@@ -22,7 +22,7 @@ export function Hero({ onCtaClick }: HeroProps) {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/20" />
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl">
