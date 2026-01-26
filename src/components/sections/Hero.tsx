@@ -33,7 +33,7 @@ export function Hero({ onCtaClick }: HeroProps) {
           transition={{ duration: 0.8 }}
         >
           <span className="text-[#FFFFFF]">
-            Soy Luz Guffanti, Creadora de contenido.
+            Soy Luz Guffanti, 
           </span>
           <span className="text-[#FFFFFF]">
             Creadora de contenido.
