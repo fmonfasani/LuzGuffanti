@@ -27,7 +27,7 @@ export function Hero({ onCtaClick }: HeroProps) {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl">
       <motion.h1
-        className="text-4xl md:text-7xl font-display font-bold text-white mb-10 tracking-tighter text-center"
+        className="text-4xl md:text-7xl font-display font-bold text-pink-200 mb-10 tracking-tighter text-center"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
