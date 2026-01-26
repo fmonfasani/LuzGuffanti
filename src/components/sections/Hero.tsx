@@ -12,7 +12,7 @@ export function Hero({ onCtaClick }: HeroProps) {
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/about-photo.jpg"
+        src="/mountain.jpg"
         alt="Hero background"
         fill
         priority
