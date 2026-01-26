@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { Instagram, Mail, Phone, MapPin, Linkedin } from "lucide-react";
 
-
 export function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -46,9 +45,15 @@ export function Contact() {
       className="py-20 bg-section-light dark:bg-section-dark"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-display font-bold text-center text-primary mb-12 uppercase">
-          CONTACTO
-        </h2>
+        <div className="text-center mb-16 max-w-3xl mx-auto">
+          <h3 className="text-2xl md:text-3xl font-display font-medium text-gray-800 dark:text-gray-200 mb-4 italic">
+            ¿Tenés una idea para tu marca?
+          </h3>
+          <p className="text-lg text-gray-600 dark:text-gray-400">
+            Contame de qué se trata y vemos cómo crear el contenido ideal, llená
+            este formulario:
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
@@ -220,15 +225,6 @@ export function Contact() {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="mt-24 text-center border-t border-gray-100 dark:border-gray-800 pt-12">
-          <p className="text-2xl md:text-3xl font-display font-medium text-gray-800 dark:text-gray-200 mb-4 italic">
-            ¿Tenés una idea para tu marca?
-          </p>
-          <p className="text-lg text-gray-600 dark:text-gray-400">
-            Contame de qué se trata y vemos cómo crear el contenido ideal.
-          </p>
         </div>
       </div>
     </section>
