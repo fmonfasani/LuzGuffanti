@@ -161,16 +161,16 @@ export const testimonials = [
   {
     quote:
       "Luz transformó completamente nuestra presencia en redes sociales. Su contenido auténtico conectó con nuestra audiencia de una forma que nunca imaginamos.",
-    author: "Cliente A",
+    author: "Adrian O.",
   },
   {
     quote:
       "Trabajar con Luz fue una experiencia increíble. Su visión artística y profesionalismo se reflejan en cada video que crea.",
-    author: "Cliente B",
+    author: "Dario L.",
   },
   {
     quote:
       "La calidad y creatividad de los contenidos que produce Luz son excepcionales. Ha ayudado a nuestra marca a destacar en un mercado competitivo.",
-    author: "Cliente C",
+    author: "Erica O.",
   },
 ];
