@@ -19,7 +19,7 @@ export function Header() {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="text-xl md:text-2xl font-display font-bold text-primary">
-          LUZ GUFFANTI | CREADORA DE CONTENIDO
+          LUZ GUFFANTI
         </div>
 
         {/* Desktop Navigation */}
@@ -86,7 +86,7 @@ export function Header() {
               className="bg-primary text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all mt-2 text-center font-bold"
               onClick={() => setIsMenuOpen(false)}
             >
-              TRABAJEMOS JUNTOS
+              Escribinos
             </a>
           </div>
         </div>
