@@ -13,7 +13,7 @@ type ContactModalProps = {
 export function ContactModal({
     isOpen,
     onClose,
-    whatsappNumber = "+541166811646",
+    whatsappNumber = "+54 9 11 6681-1646",
     calendlyUrl = "https://calendly.com/luzguffanti"
 }: ContactModalProps) {
     const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, '')}`;
