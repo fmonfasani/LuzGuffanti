@@ -2,7 +2,11 @@
 
 import { useState } from "react";
 
-export function Header() {
+type HeaderProps = {
+  onCtaClick: () => void;
+};
+
+export function Header({ onCtaClick }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
@@ -15,79 +19,66 @@ export function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-sm border-b border-card-light dark:border-card-dark">
+    <header className="sticky top-0 z-50 bg-background-light/90 backdrop-blur-sm border-b">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="text-xl md:text-2xl font-display font-bold text-primary">
-          LUZ GUFFANTI | CREADORA DE CONTENIDO
+          LUZ GUFFANTI
         </div>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8">
           {navItems.map((item) => (
             <a
               key={item.id}
               href={`#${item.id}`}
-              className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium"
+              className="text-gray-700 hover:text-primary transition-colors text-sm font-medium"
             >
               {item.label}
             </a>
           ))}
         </nav>
 
-        {/* CTA Button */}
-        <a
-          href="#contact"
+        {/* CTA Desktop */}
+        <button
+          onClick={onCtaClick}
           className="hidden md:block bg-primary text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all font-bold text-sm"
         >
           TRABAJEMOS JUNTOS
-        </a>
+        </button>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-gray-700 dark:text-gray-300"
+          className="md:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d={
-                isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
-              }
-            />
-          </svg>
+          ☰
         </button>
       </div>
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-background-light dark:bg-background-dark border-t border-card-light dark:border-card-dark">
-          <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
+        <div className="md:hidden border-t">
+          <div className="px-4 py-4 flex flex-col space-y-4">
             {navItems.map((item) => (
               <a
                 key={item.id}
                 href={`#${item.id}`}
-                className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary py-2 transition-colors font-medium border-b border-gray-100 dark:border-gray-800"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
               </a>
             ))}
-            <a
-              href="#contact"
-              className="bg-primary text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all mt-2 text-center font-bold"
-              onClick={() => setIsMenuOpen(false)}
+
+            <button
+              onClick={() => {
+                onCtaClick();
+                setIsMenuOpen(false);
+              }}
+              className="bg-primary text-white px-6 py-2 rounded-full font-bold"
             >
               TRABAJEMOS JUNTOS
-            </a>
+            </button>
           </div>
         </div>
       )}

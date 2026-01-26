@@ -36,7 +36,7 @@ export default function Home() {
       <ContactModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        whatsappNumber="+5491112345678"
+        whatsappNumber="+54 9 11 6681-1646"
         calendlyUrl="https://calendly.com/luzguffanti"
       />
       <WhatsAppButton />
