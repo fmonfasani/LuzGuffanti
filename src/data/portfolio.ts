@@ -31,6 +31,7 @@ export const portfolioCategories = [
       { videoSrc: "Real_State_1_lvkgns", alt: "Real Estate 1" },
       { videoSrc: "Real_State_2_vy8nbd", alt: "Real Estate 2" },
       { videoSrc: "Real_State_3_fjsnao", alt: "Real Estate 3" },
+      { videoSrc: undefined, alt: "Real Estate 4 (Próximamente)" },
     ],
   },
 
@@ -90,7 +91,7 @@ export const portfolioCategories = [
       { videoSrc: "Eventos_1_smrenh", alt: "Evento 1" },
       { videoSrc: "Eventos_2_wi9u4x", alt: "Evento 2" },
       { videoSrc: "Eventos_3_plm0lu", alt: "Evento 3" },
-      { videoSrc: "Eventos_3_plm0lu", alt: "Evento 4" }, // Repetido según la lista de usuario
+      { videoSrc: "Eventos_3_plm0lu", alt: "Evento 4" },
     ],
   },
 
@@ -101,15 +102,21 @@ export const portfolioCategories = [
     items: [
       { videoSrc: "1-Ecommerce_wh8cna", alt: "Ecommerce 1" },
       { videoSrc: "2-Ecommerce_ko0dpn", alt: "Ecommerce 2" },
+      { videoSrc: undefined, alt: "Ecommerce 3 (Próximamente)" },
       { videoSrc: "4-Ecommerce_h2vzpr", alt: "Ecommerce 4" },
     ],
   },
 
-  // Humor (Manteniéndolo por si quieres agregar luego)
+  // Humor
   {
     id: "humor",
     label: "Humor",
-    items: [],
+    items: [
+      { videoSrc: undefined, alt: "Humor 1 (Próximamente)" },
+      { videoSrc: undefined, alt: "Humor 2 (Próximamente)" },
+      { videoSrc: undefined, alt: "Humor 3 (Próximamente)" },
+      { videoSrc: undefined, alt: "Humor 4 (Próximamente)" },
+    ],
   },
 ];
 
