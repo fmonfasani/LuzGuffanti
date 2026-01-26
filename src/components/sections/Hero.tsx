@@ -35,6 +35,7 @@ export function Hero({ onCtaClick }: HeroProps) {
           <span className="text-[#FFFFFF]">
             Soy Luz Guffanti, 
           </span>
+          <br />
           <span className="text-[#FFFFFF]">
             Creadora de contenido.
           </span>
