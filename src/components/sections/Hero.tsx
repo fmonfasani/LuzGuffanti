@@ -40,11 +40,11 @@ export function Hero({ onCtaClick }: HeroProps) {
             Creadora de contenido.
           </span>
           <br />
-          <span className="text-3xl md:text-5xl font-light block mt-2 text-white">
-            Conecto marcas y personas
+          <span className="text-3xl md:text-4xl font-light block mt-2 text-white">
+            Conecto marcas y personas a través de historias que inspiran.
           </span>
           <span className="text-2xl md:text-4xl font-light block mt-1 text-white/90">
-            a través de historias que inspiran.
+            
           </span>
         </motion.h1>
       
