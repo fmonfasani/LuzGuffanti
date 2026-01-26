@@ -26,24 +26,26 @@ export function Hero({ onCtaClick }: HeroProps) {
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl">
-      <motion.h1
-        className="text-4xl md:text-7xl font-display font-bold text-pink-200 mb-10 tracking-tighter text-center"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        Soy Luz Guffanti, Creadora de contenido.
-        <br />
-        <span className="text-3xl md:text-5xl font-light block mt-2">
-          Conecto marcas y personas
-        </span>
-        <span className="text-2xl md:text-4xl font-light italic block mt-1 text-white/90">
-          a través de historias que inspiran.
-        </span>
-      </motion.h1>
-
+        <motion.h1
+          className="text-4xl md:text-7xl font-display font-bold mb-10 tracking-tighter text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <span className="text-[#94634F]">
+            Soy Luz Guffanti, Creadora de contenido.
+          </span>
+          <br />
+          <span className="text-3xl md:text-5xl font-light block mt-2 text-white">
+            Conecto marcas y personas
+          </span>
+          <span className="text-2xl md:text-4xl font-light italic block mt-1 text-white/90">
+            a través de historias que inspiran.
+          </span>
+        </motion.h1>
+      
         <motion.button
-          className="bg-primary text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-opacity-90 transition-all transform hover:scale-105 uppercase tracking-widest shadow-xl"
+          className="bg-[#94634F] text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-opacity-90 transition-all transform hover:scale-105 uppercase tracking-widest shadow-xl"
           onClick={onCtaClick}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -52,6 +54,7 @@ export function Hero({ onCtaClick }: HeroProps) {
           TRABAJEMOS JUNTOS
         </motion.button>
       </div>
+
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white z-10">
