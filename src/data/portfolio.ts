@@ -137,10 +137,10 @@ export const services = [
 ];
 
 export const tools = [
-  { imageSrc: "/tools-images/camara.png", name: "Cámara" },
-  { imageSrc: "/tools-images/microfono.png", name: "Micrófono" },
+  { imageSrc: "/tools-images/iphone.png", name: "Iphone 15 Pro" },
+  { imageSrc: "/tools-images/rode.png", name: "Micrófono" },
   { imageSrc: "/tools-images/tripode.png", name: "Trípode" },
-  { imageSrc: "/tools-images/luz.png", name: "Luz de apoyo" },
+  { imageSrc: "/Luz Auxiliar.png", name: "Luz de apoyo" },
 ];
 
 export const testimonials = [
