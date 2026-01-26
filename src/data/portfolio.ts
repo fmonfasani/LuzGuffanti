@@ -1,17 +1,5 @@
 export const portfolioCategories = [
-  // Viajes
-  {
-    id: "viajes",
-    label: "Viajes",
-    items: [
-      { videoSrc: "1-Viajes_ftiyip", alt: "Viaje 1" },
-      { videoSrc: "2-Viajes_ygamxf", alt: "Viaje 2" },
-      { videoSrc: "3-Viajes_kbvotp", alt: "Viaje 3" },
-      { videoSrc: "4-Viajes_vpwdsg", alt: "Viaje 4" },
-    ],
-  },
-
-  // UGC
+  // 1. UGC
   {
     id: "ugc",
     label: "UGC",
@@ -23,34 +11,10 @@ export const portfolioCategories = [
     ],
   },
 
-  // Real Estate
-  {
-    id: "real-estate",
-    label: "Real Estate",
-    items: [
-      { videoSrc: "Real_State_1_lvkgns", alt: "Real Estate 1" },
-      { videoSrc: "Real_State_2_vy8nbd", alt: "Real Estate 2" },
-      { videoSrc: "Real_State_3_fjsnao", alt: "Real Estate 3" },
-      { videoSrc: undefined, alt: "Real Estate 4 (Próximamente)" },
-    ],
-  },
-
-  // JetSmart
-  {
-    id: "jetsmart",
-    label: "JetSmart",
-    items: [
-      { videoSrc: "1-Jetsmart_eggbq9", alt: "JetSmart 1" },
-      { videoSrc: "2-Jetsmart_ihd86b", alt: "JetSmart 2" },
-      { videoSrc: "3-Jetsmart_ycpgxq", alt: "JetSmart 3" },
-      { videoSrc: "4-Jetsmart_ph3fqm", alt: "JetSmart 4" },
-    ],
-  },
-
-  // Institucional
+  // 2. Empresas & Servicios
   {
     id: "institucional",
-    label: "Institucional",
+    label: "Empresas & Servicios",
     items: [
       { videoSrc: "Institucional_1_yixriw", alt: "Institucional 1" },
       { videoSrc: "Institucional_2_gzidpi", alt: "Institucional 2" },
@@ -59,31 +23,43 @@ export const portfolioCategories = [
     ],
   },
 
-  // Hotelería
+  // 3. Jetsmart
   {
-    id: "hoteleria",
-    label: "Hotelería",
+    id: "jetsmart",
+    label: "Jetsmart",
     items: [
-      { videoSrc: "Hoteleria_1_viwbyh", alt: "Hotelería 1" },
-      { videoSrc: "Hoteleria_2_it6diy", alt: "Hotelería 2" },
-      { videoSrc: "Hoteleria_3_psqxca", alt: "Hotelería 3" },
-      { videoSrc: "Hoteleria_4_khu00z", alt: "Hotelería 4" },
+      { videoSrc: "1-Jetsmart_eggbq9", alt: "JetSmart 1" },
+      { videoSrc: "2-Jetsmart_ihd86b", alt: "JetSmart 2" },
+      { videoSrc: "3-Jetsmart_ycpgxq", alt: "JetSmart 3" },
+      { videoSrc: "4-Jetsmart_ph3fqm", alt: "JetSmart 4" },
     ],
   },
 
-  // Gastronomía
+  // 4. Turismo
   {
-    id: "gastronomia",
-    label: "Gastronomía",
+    id: "turismo",
+    label: "Turismo",
     items: [
-      { videoSrc: "Gastronomia_1_hbi9qb", alt: "Gastronomía 1" },
-      { videoSrc: "Gastronomia_2_f7wvcc", alt: "Gastronomía 2" },
-      { videoSrc: "Gastronomia_3_wtcoae", alt: "Gastronomía 3" },
-      { videoSrc: "Gastronomia_4_lvpqup", alt: "Gastronomía 4" },
+      { videoSrc: undefined, alt: "Turismo 1 (Próximamente)" },
+      { videoSrc: undefined, alt: "Turismo 2 (Próximamente)" },
+      { videoSrc: undefined, alt: "Turismo 3 (Próximamente)" },
+      { videoSrc: undefined, alt: "Turismo 4 (Próximamente)" },
     ],
   },
 
-  // Eventos
+  // 5. Real state
+  {
+    id: "real-estate",
+    label: "Real state",
+    items: [
+      { videoSrc: "Real_State_1_lvkgns", alt: "Real Estate 1" },
+      { videoSrc: "Real_State_2_vy8nbd", alt: "Real Estate 2" },
+      { videoSrc: "Real_State_3_fjsnao", alt: "Real Estate 3" },
+      { videoSrc: undefined, alt: "Real Estate 4 (Próximamente)" },
+    ],
+  },
+
+  // 6. Eventos
   {
     id: "eventos",
     label: "Eventos",
@@ -95,7 +71,43 @@ export const portfolioCategories = [
     ],
   },
 
-  // Ecommerce
+  // 7. Hoteleria
+  {
+    id: "hoteleria",
+    label: "Hoteleria",
+    items: [
+      { videoSrc: "Hoteleria_1_viwbyh", alt: "Hotelería 1" },
+      { videoSrc: "Hoteleria_2_it6diy", alt: "Hotelería 2" },
+      { videoSrc: "Hoteleria_3_psqxca", alt: "Hotelería 3" },
+      { videoSrc: "Hoteleria_4_khu00z", alt: "Hotelería 4" },
+    ],
+  },
+
+  // 8. Gastronomia
+  {
+    id: "gastronomia",
+    label: "Gastronomia",
+    items: [
+      { videoSrc: "Gastronomia_1_hbi9qb", alt: "Gastronomía 1" },
+      { videoSrc: "Gastronomia_2_f7wvcc", alt: "Gastronomía 2" },
+      { videoSrc: "Gastronomia_3_wtcoae", alt: "Gastronomía 3" },
+      { videoSrc: "Gastronomia_4_lvpqup", alt: "Gastronomía 4" },
+    ],
+  },
+
+  // 9. Travel
+  {
+    id: "viajes",
+    label: "Travel",
+    items: [
+      { videoSrc: "1-Viajes_ftiyip", alt: "Viaje 1" },
+      { videoSrc: "2-Viajes_ygamxf", alt: "Viaje 2" },
+      { videoSrc: "3-Viajes_kbvotp", alt: "Viaje 3" },
+      { videoSrc: "4-Viajes_vpwdsg", alt: "Viaje 4" },
+    ],
+  },
+
+  // 10. Ecommerce
   {
     id: "ecommerce",
     label: "Ecommerce",
@@ -104,18 +116,6 @@ export const portfolioCategories = [
       { videoSrc: "2-Ecommerce_ko0dpn", alt: "Ecommerce 2" },
       { videoSrc: undefined, alt: "Ecommerce 3 (Próximamente)" },
       { videoSrc: "4-Ecommerce_h2vzpr", alt: "Ecommerce 4" },
-    ],
-  },
-
-  // Humor
-  {
-    id: "humor",
-    label: "Humor",
-    items: [
-      { videoSrc: undefined, alt: "Humor 1 (Próximamente)" },
-      { videoSrc: undefined, alt: "Humor 2 (Próximamente)" },
-      { videoSrc: undefined, alt: "Humor 3 (Próximamente)" },
-      { videoSrc: undefined, alt: "Humor 4 (Próximamente)" },
     ],
   },
 ];
