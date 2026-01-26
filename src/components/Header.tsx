@@ -22,9 +22,12 @@ export function Header({ onCtaClick }: HeaderProps) {
     <header className="sticky top-0 z-50 bg-background-light/90 backdrop-blur-sm border-b">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <div className="text-xl md:text-2xl font-display font-bold text-primary">
+        <a
+          href="#home"
+          className="text-xl md:text-2xl font-display font-bold text-primary hover:opacity-80 transition-opacity"
+        >
           LUZ GUFFANTI
-        </div>
+        </a>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8">

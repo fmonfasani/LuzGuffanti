@@ -9,7 +9,10 @@ type HeroProps = {
 
 export function Hero({ onCtaClick }: HeroProps) {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Background Image */}
       <Image
         src="/mountain.jpg"
