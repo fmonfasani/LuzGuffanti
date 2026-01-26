@@ -42,7 +42,7 @@ export function Header({ onCtaClick }: HeaderProps) {
         {/* CTA Desktop */}
         <button
           onClick={onCtaClick}
-          className="hidden md:block bg-primary text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all font-bold text-sm"
+          className="hidden md:block bg-primary text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all transform hover:scale-105 font-bold text-sm uppercase tracking-wider shadow-md"
         >
           TRABAJEMOS JUNTOS
         </button>
@@ -75,7 +75,7 @@ export function Header({ onCtaClick }: HeaderProps) {
                 onCtaClick();
                 setIsMenuOpen(false);
               }}
-              className="bg-primary text-white px-6 py-2 rounded-full font-bold"
+              className="bg-primary text-white px-6 py-3 rounded-full font-bold uppercase tracking-wider shadow-md"
             >
               TRABAJEMOS JUNTOS
             </button>

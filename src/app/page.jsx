@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <>
-      <Header />
+      <Header onCtaClick={handleCtaClick} />
       <Hero onCtaClick={handleCtaClick} />
       <About />
       <Services />
