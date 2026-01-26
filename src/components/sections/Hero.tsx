@@ -32,10 +32,10 @@ export function Hero({ onCtaClick }: HeroProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          LUZ GUFFANTI
+          Soy Luz Guffanti, Creadora de contenido.
           <br />
           <span className="text-3xl md:text-5xl font-light">
-            CREADORA DE CONTENIDO
+            Conecto marcas y personas 
           </span>
         </motion.h1>
 
@@ -45,7 +45,7 @@ export function Hero({ onCtaClick }: HeroProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          &quot;Transformando ideas en contenido visual con propósito.&quot;
+          &quot;a través de historias que inspiran.&quot;
         </motion.p>
 
         <motion.button
