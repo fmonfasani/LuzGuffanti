@@ -50,8 +50,7 @@ export function Contact() {
             ¿Tenés una idea para tu marca?
           </h3>
           <p className="text-lg text-gray-600 dark:text-gray-400">
-            Contame de qué se trata y vemos cómo crear el contenido ideal, llená
-            este formulario:
+            llená este formulario y te creamos el contenido ideal:
           </p>
         </div>
 
