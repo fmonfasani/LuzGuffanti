@@ -143,12 +143,19 @@ export const services = [
   },
 ];
 
-export const tools = [
-  { imageSrc: "/tools-images/iphone.png", name: "Iphone 15 Pro" },
-  { imageSrc: "/tools-images/rode.png", name: "Micrófono" },
-  { imageSrc: "/tools-images/tripode.png", name: "Trípode" },
-  { imageSrc: "/Luz Auxiliar.png", name: "Luz de apoyo" },
-];
+export const tools = {
+  mainTools: [
+    { imageSrc: "/tools-images/iphone.png", name: "iPhone 17 Pro" },
+    { imageSrc: "/tools-images/rode.png", name: "Rode Wireless Micro" },
+    { imageSrc: "/tools-images/tripode.png", name: "Trípode" },
+    { imageSrc: "/tools-images/Gimbal.png", name: "Gimbal" },
+  ],
+  secondaryTools: [
+    { imageSrc: "/Luz Auxiliar.png", name: "Luz de apoyo" },
+    { imageSrc: "/tools-images/ipad.png", name: "iPad 2025" },
+    { imageSrc: "/tools-images/capcut.jpg", name: "CapCut Pro" },
+  ],
+};
 
 export const testimonials = [
   {
