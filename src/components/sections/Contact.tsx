@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Instagram, Mail, Phone, MapPin, Linkedin } from "lucide-react";
-import { FaTiktok } from "react-icons/fa";
+
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -198,7 +198,7 @@ export function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-card-light dark:bg-card-dark p-3 rounded-full text-gray-700 dark:text-gray-300 hover:text-primary transition-all border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md"
-                  ><FaTiktok className="w-6 h-6" />
+                  >
                     <svg
                       className="w-6 h-6"
                       viewBox="0 0 24 24"
