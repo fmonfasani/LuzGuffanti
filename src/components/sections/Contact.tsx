@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Instagram, Mail, Phone, MapPin, Linkedin } from "lucide-react";
 
+
 export function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -196,16 +197,17 @@ export function Contact() {
                     href="https://tiktok.com/@luzdegira"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-card-light dark:bg-card-dark p-3 rounded-full hover:text-primary transition-all border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md"
+                    className="bg-card-light dark:bg-card-dark p-3 rounded-full text-gray-700 dark:text-gray-300 hover:text-primary transition-all border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md"
                   >
                     <svg
                       className="w-6 h-6"
                       viewBox="0 0 24 24"
                       fill="currentColor"
                     >
-                      <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.58-1.01V14.5c0 1.51-.31 3.03-1.09 4.31-1.3 2.15-3.8 3.44-6.31 3.16-2.51-.28-4.75-2.07-5.59-4.45-.84-2.38-.2-5.11 1.62-6.85 1.51-1.43 3.69-2.06 5.71-1.63.15-.49.19-1 .18-1.51-1.3-.01-2.61.12-3.89.4-2.89.62-5.41 2.87-6.04 5.75-.63 2.88.3 6.02 2.53 8.01 2.22 1.99 5.56 2.5 8.28 1.34 2.72-1.16 4.54-4.04 4.52-7V1.1c.01-.36-.02-.72-.01-1.08z" />
+                      <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02..." />
                     </svg>
                   </a>
+
                   <a
                     href="https://linkedin.com/in/luz-guffanti"
                     target="_blank"

@@ -11,7 +11,7 @@ export function About() {
           <div className="relative">
             <div className="aspect-[4/5] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/about-photo.jpg"
+                src="/About_left.JPG"
                 alt="Luz Guffanti"
                 fill
                 className="object-cover"
