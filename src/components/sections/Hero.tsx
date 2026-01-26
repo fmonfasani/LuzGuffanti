@@ -32,14 +32,17 @@ export function Hero({ onCtaClick }: HeroProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <span className="text-[#94634F]">
+          <span className="text-[#FFFFFF]">
             Soy Luz Guffanti, Creadora de contenido.
+          </span>
+          <span className="text-[#FFFFFF]">
+            Creadora de contenido.
           </span>
           <br />
           <span className="text-3xl md:text-5xl font-light block mt-2 text-white">
             Conecto marcas y personas
           </span>
-          <span className="text-2xl md:text-4xl font-light italic block mt-1 text-white/90">
+          <span className="text-2xl md:text-4xl font-light block mt-1 text-white/90">
             a través de historias que inspiran.
           </span>
         </motion.h1>
