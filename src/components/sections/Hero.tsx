@@ -39,7 +39,7 @@ export function Hero({ onCtaClick }: HeroProps) {
           <br />
           <span className="text-[#FFFFFF]">Creadora de contenido.</span>
           <br />
-          <span className="text-xl md:text-5xl font-display font-extralight italic block mt-6 text-white/90 leading-relaxed whitespace-nowrap">
+          <span className="text-base md:text-2xl font-display font-extralight italic block mt-6 text-white/90 leading-relaxed whitespace-nowrap">
             Conecto marcas y personas a través de historias que inspiran.
           </span>
           <span className="text-2xl md:text-4xl font-light block mt-1 text-white/90"></span>
