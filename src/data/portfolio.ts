@@ -100,7 +100,7 @@ export const portfolioCategories = [
       },
       {
         videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769468395/2_hvmipg.mov",
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769468405/3_hdpwbo.mov",
         alt: "Turismo 3",
       },
       {
@@ -123,7 +123,7 @@ export const portfolioCategories = [
       },
       {
         videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769516872/4_yeilwn.mp4",
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769470321/2_ygefg6.mov",
         alt: "Real Estate 2",
       },
       {
@@ -133,7 +133,7 @@ export const portfolioCategories = [
       },
       {
         videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769470364/3_ldknit.mov",
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769516872/4_yeilwn.mp4",
         alt: "Real Estate 4",
       },
     ],
@@ -263,7 +263,7 @@ export const portfolioCategories = [
       },
       {
         videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769516194/1_m7uvje.mp4",
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514992/2_dknz9d.mov",
         alt: "Ecommerce 2",
       },
       {
@@ -273,7 +273,7 @@ export const portfolioCategories = [
       },
       {
         videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769515001/3_vkiuzr.mov",
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769515007/4_mrfq2f.mov",
         alt: "Ecommerce 4",
       },
     ],
