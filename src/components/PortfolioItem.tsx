@@ -20,9 +20,32 @@ export function PortfolioItem({ videoSrc, alt }: PortfolioItemProps) {
 
   const getCloudinaryUrl = (publicId: string) => {
     if (!publicId) return "";
-    if (publicId.startsWith("http")) return publicId;
-    // Agregamos la extensión .mp4 para forzar a Cloudinary a servir un formato con audio compatible
-    return `https://res.cloudinary.com/${cloudName}/video/upload/f_auto,q_auto/${publicId}.mp4`;
+    if (publicId.startsWith("http")) {
+      // Si ya es una URL de Cloudinary, nos aseguramos de que tenga f_auto,q_auto
+      if (
+        publicId.includes("cloudinary.com") &&
+        !publicId.includes("/f_auto,q_auto/")
+      ) {
+        return publicId.replace("/upload/", "/upload/f_auto,q_auto/");
+      }
+      return publicId;
+    }
+    return `https://res.cloudinary.com/${cloudName}/video/upload/f_auto,q_auto/${publicId}`;
+  };
+
+  const getCloudinaryPoster = (urlOrId: string) => {
+    if (!urlOrId) return "";
+    let baseUrl = "";
+    if (urlOrId.startsWith("http")) {
+      baseUrl = urlOrId;
+    } else {
+      baseUrl = `https://res.cloudinary.com/${cloudName}/video/upload/${urlOrId}`;
+    }
+
+    // Transformamos en imagen (JPG) y buscamos el frame de inicio
+    return baseUrl
+      .replace("/video/upload/", "/video/upload/so_auto,f_jpg,q_auto/")
+      .replace(/\.[^/.]+$/, ".jpg"); // Cambia la extensión a .jpg
   };
 
   const isExternal = videoSrc?.startsWith("http");
@@ -122,7 +145,7 @@ export function PortfolioItem({ videoSrc, alt }: PortfolioItemProps) {
             muted={isMuted}
             playsInline
             controls={showControls}
-            poster={`https://res.cloudinary.com/${cloudName}/video/upload/so_auto,f_jpg,q_auto/${videoSrc}`}
+            poster={getCloudinaryPoster(videoSrc)}
           />
 
           {/* Botón Flotante de Sonido */}
