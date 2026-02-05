@@ -4,34 +4,82 @@ export const portfolioCategories = [
     id: "ugc",
     label: "UGC",
     items: [
-      { videoSrc: "UGC_1_fcayf0", alt: "UGC 1" },
-      { videoSrc: "UGC_2_qr0yun", alt: "UGC 2" },
-      { videoSrc: "UGC_3_gmvujj", alt: "UGC 3" },
-      { videoSrc: "UGC_4_ios2jm", alt: "UGC 4" },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769466428/1_mylltr.mov",
+        alt: "UGC 1",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769466428/4_olytf0.mov",
+        alt: "UGC 2",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769466426/3_gvwrjf.mov",
+        alt: "UGC 3",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769466420/2_me2owh.mp4",
+        alt: "UGC 4",
+      },
     ],
   },
 
-  // 2. Empresas & Servicios
-  {
-    id: "institucional",
-    label: "Empresas & Servicios",
-    items: [
-      { videoSrc: "Institucional_1_yixriw", alt: "Institucional 1" },
-      { videoSrc: "Institucional_2_gzidpi", alt: "Institucional 2" },
-      { videoSrc: "Institucional_3_zvk3nl", alt: "Institucional 3" },
-      { videoSrc: "Institucional_4_ylqiis", alt: "Institucional 4" },
-    ],
-  },
-
-  // 3. Jetsmart
+  // 2. UGC Jetsmart
   {
     id: "jetsmart",
-    label: "Jetsmart",
+    label: "UGC Jetsmart",
     items: [
-      { videoSrc: "1-Jetsmart_eggbq9", alt: "JetSmart 1" },
-      { videoSrc: "2-Jetsmart_ihd86b", alt: "JetSmart 2" },
-      { videoSrc: "3-Jetsmart_ycpgxq", alt: "JetSmart 3" },
-      { videoSrc: "4-Jetsmart_ph3fqm", alt: "JetSmart 4" },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769468285/1_axgigc.mov",
+        alt: "JetSmart 1",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769468283/2_l7w67a.mov",
+        alt: "JetSmart 2",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769468281/4_wpcdcd.mov",
+        alt: "JetSmart 3",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769468276/3_t3fwtt.mov",
+        alt: "JetSmart 4",
+      },
+    ],
+  },
+
+  // 3. Empresas y Servicios
+  {
+    id: "institucional",
+    label: "Empresas y Servicios",
+    items: [
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769466638/1_gzfwkv.mov",
+        alt: "Institucional 1",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769466635/2_tbeizt.mov",
+        alt: "Institucional 2",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769466634/3_cactvx.mov",
+        alt: "Institucional 3",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769466659/4_shc8b4.mov",
+        alt: "Institucional 4",
+      },
     ],
   },
 
@@ -40,10 +88,26 @@ export const portfolioCategories = [
     id: "turismo",
     label: "Turismo",
     items: [
-      { videoSrc: undefined, alt: "Turismo 1 (Próximamente)" },
-      { videoSrc: undefined, alt: "Turismo 2 (Próximamente)" },
-      { videoSrc: undefined, alt: "Turismo 3 (Próximamente)" },
-      { videoSrc: undefined, alt: "Turismo 4 (Próximamente)" },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769468425/1_japwxv.mov",
+        alt: "Turismo 1",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769468395/2_hvmipg.mov",
+        alt: "Turismo 2",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769468395/2_hvmipg.mov",
+        alt: "Turismo 3",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769468397/4_huvxpj.mov",
+        alt: "Turismo 4",
+      },
     ],
   },
 
@@ -52,10 +116,26 @@ export const portfolioCategories = [
     id: "real-estate",
     label: "Real state",
     items: [
-      { videoSrc: "Real_State_1_lvkgns", alt: "Real Estate 1" },
-      { videoSrc: "Real_State_2_vy8nbd", alt: "Real Estate 2" },
-      { videoSrc: "Real_State_3_fjsnao", alt: "Real Estate 3" },
-      { videoSrc: undefined, alt: "Real Estate 4 (Próximamente)" },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769470294/1_onz3ua.mov",
+        alt: "Real Estate 1",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769516872/4_yeilwn.mp4",
+        alt: "Real Estate 2",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769470364/3_ldknit.mov",
+        alt: "Real Estate 3",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769470364/3_ldknit.mov",
+        alt: "Real Estate 4",
+      },
     ],
   },
 
@@ -64,46 +144,110 @@ export const portfolioCategories = [
     id: "eventos",
     label: "Eventos",
     items: [
-      { videoSrc: "Eventos_1_smrenh", alt: "Evento 1" },
-      { videoSrc: "Eventos_2_wi9u4x", alt: "Evento 2" },
-      { videoSrc: "Eventos_3_plm0lu", alt: "Evento 3" },
-      { videoSrc: "Eventos_3_plm0lu", alt: "Evento 4" },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514057/1_lk0j3z.mov",
+        alt: "Evento 1",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514052/2_cwyjci.mov",
+        alt: "Evento 2",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514053/3_sdluix.mov",
+        alt: "Evento 3",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514057/4_np1hpr.mov",
+        alt: "Evento 4",
+      },
     ],
   },
 
-  // 7. Hoteleria
+  // 7. Hotelería
   {
     id: "hoteleria",
-    label: "Hoteleria",
+    label: "Hotelería",
     items: [
-      { videoSrc: "Hoteleria_1_viwbyh", alt: "Hotelería 1" },
-      { videoSrc: "Hoteleria_2_it6diy", alt: "Hotelería 2" },
-      { videoSrc: "Hoteleria_3_psqxca", alt: "Hotelería 3" },
-      { videoSrc: "Hoteleria_4_khu00z", alt: "Hotelería 4" },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514359/1_rgpvzn.mov",
+        alt: "Hotelería 1",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514349/2_tetj3n.mov",
+        alt: "Hotelería 2",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514334/3_nfbdfd.mov",
+        alt: "Hotelería 3",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769519935/4_ia7t31.mov",
+        alt: "Hotelería 4",
+      },
     ],
   },
 
-  // 8. Gastronomia
+  // 8. Gastronomía
   {
     id: "gastronomia",
-    label: "Gastronomia",
+    label: "Gastronomía",
     items: [
-      { videoSrc: "Gastronomia_1_hbi9qb", alt: "Gastronomía 1" },
-      { videoSrc: "Gastronomia_2_f7wvcc", alt: "Gastronomía 2" },
-      { videoSrc: "Gastronomia_3_wtcoae", alt: "Gastronomía 3" },
-      { videoSrc: "Gastronomia_4_lvpqup", alt: "Gastronomía 4" },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514491/1_qmxqqy.mov",
+        alt: "Gastronomía 1",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769465922/2_gnjsfr.mov",
+        alt: "Gastronomía 2",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514471/3_dehvwa.mov",
+        alt: "Gastronomía 3",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769465920/4_e5ulvz.mp4",
+        alt: "Gastronomía 4",
+      },
     ],
   },
 
-  // 9. Travel
+  // 9. Travel trends
   {
-    id: "viajes",
-    label: "Travel",
+    id: "travel-trends",
+    label: "Travel trends",
     items: [
-      { videoSrc: "1-Viajes_ftiyip", alt: "Viaje 1" },
-      { videoSrc: "2-Viajes_ygamxf", alt: "Viaje 2" },
-      { videoSrc: "3-Viajes_kbvotp", alt: "Viaje 3" },
-      { videoSrc: "4-Viajes_vpwdsg", alt: "Viaje 4" },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514659/1_bajqqt.mov",
+        alt: "Travel Trends 1",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514666/2_seknkq.mov",
+        alt: "Travel Trends 2",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514666/3_gnjvpp.mov",
+        alt: "Travel Trends 3",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514638/4_dlrvkt.mov",
+        alt: "Travel Trends 4",
+      },
     ],
   },
 
@@ -112,10 +256,26 @@ export const portfolioCategories = [
     id: "ecommerce",
     label: "Ecommerce",
     items: [
-      { videoSrc: "1-Ecommerce_wh8cna", alt: "Ecommerce 1" },
-      { videoSrc: "2-Ecommerce_ko0dpn", alt: "Ecommerce 2" },
-      { videoSrc: undefined, alt: "Ecommerce 3 (Próximamente)" },
-      { videoSrc: "4-Ecommerce_h2vzpr", alt: "Ecommerce 4" },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769516194/1_m7uvje.mp4",
+        alt: "Ecommerce 1",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769516194/1_m7uvje.mp4",
+        alt: "Ecommerce 2",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769515001/3_vkiuzr.mov",
+        alt: "Ecommerce 3",
+      },
+      {
+        videoSrc:
+          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769515001/3_vkiuzr.mov",
+        alt: "Ecommerce 4",
+      },
     ],
   },
 ];
