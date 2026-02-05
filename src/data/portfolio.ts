@@ -27,10 +27,10 @@ export const portfolioCategories = [
     ],
   },
 
-  // 2. UGC Jetsmart
+  // 2. Jetsmart
   {
     id: "jetsmart",
-    label: "UGC Jetsmart",
+    label: "Jetsmart",
     items: [
       {
         videoSrc:
@@ -223,30 +223,30 @@ export const portfolioCategories = [
     ],
   },
 
-  // 9. Travel trends
+  // 9. Travels
   {
-    id: "travel-trends",
-    label: "Travel trends",
+    id: "travels",
+    label: "Travels",
     items: [
       {
         videoSrc:
           "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514659/1_bajqqt.mov",
-        alt: "Travel Trends 1",
+        alt: "Travels 1",
       },
       {
         videoSrc:
           "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514666/2_seknkq.mov",
-        alt: "Travel Trends 2",
+        alt: "Travels 2",
       },
       {
         videoSrc:
           "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514666/3_gnjvpp.mov",
-        alt: "Travel Trends 3",
+        alt: "Travels 3",
       },
       {
         videoSrc:
           "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514638/4_dlrvkt.mov",
-        alt: "Travel Trends 4",
+        alt: "Travels 4",
       },
     ],
   },
