@@ -142,6 +142,7 @@ export function PortfolioItem({ videoSrc, alt }: PortfolioItemProps) {
             src={getCloudinaryUrl(videoSrc)}
             className="w-full h-full object-cover"
             loop
+            autoPlay
             muted={isMuted}
             playsInline
             controls={showControls}
@@ -168,15 +169,6 @@ export function PortfolioItem({ videoSrc, alt }: PortfolioItemProps) {
                   <Play className="text-white w-8 h-8 fill-white ml-1" />
                 )}
               </div>
-            </div>
-          )}
-
-          {/* Etiqueta de Categoría */}
-          {!showControls && (
-            <div className="absolute bottom-4 left-4 right-4 z-10">
-              <span className="text-[10px] text-white/90 uppercase tracking-widest font-bold bg-primary/80 backdrop-blur-sm px-3 py-1.5 rounded-full shadow-sm">
-                {alt}
-              </span>
             </div>
           )}
         </>
