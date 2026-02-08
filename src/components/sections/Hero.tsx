@@ -21,14 +21,14 @@ export function Hero({ onCtaClick }: HeroProps) {
         priority
         quality={100}
         unoptimized
-        className="object-cover object-center"
+        className="object-cover object-[70%_center] md:object-center"
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/20" />
+      <div className="absolute inset-0 bg-black/30" />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl pt-24">
+      <div className="relative z-10 text-center px-4 max-w-5xl pt-24">
         <motion.h1
           className="text-4xl md:text-7xl font-display font-bold mb-10 tracking-tighter text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -39,10 +39,9 @@ export function Hero({ onCtaClick }: HeroProps) {
           <br />
           <span className="text-[#FFFFFF]">Creadora de contenido.</span>
           <br />
-          <span className="text-[10px] md:text-lg font-body font-light uppercase tracking-[0.35em] block mt-8 text-white/80 max-w-fit mx-auto">
+          <span className="text-sm md:text-2xl font-display font-light tracking-wide block mt-8 text-white/95 lowercase italic">
             Conecto marcas y personas a través de historias que inspiran.
           </span>
-          <span className="text-2xl md:text-4xl font-light block mt-1 text-white/90"></span>
         </motion.h1>
 
         <motion.button
