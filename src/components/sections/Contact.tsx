@@ -63,11 +63,11 @@ export function Contact() {
     >
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 max-w-3xl mx-auto">
-          <h3 className="text-3xl md:text-4xl font-display font-bold text-gray-800 dark:text-gray-200 mb-6 uppercase tracking-wider">
+          <h3 className="text-3xl md:text-5xl font-display font-bold text-[#94634F] mb-6 tracking-tighter">
             ¿Querés llevar tu contenido a otro nivel?
           </h3>
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 font-medium">
-            Contactame y armamos el contenido ideal para vos.
+          <p className="text-xl md:text-3xl font-display font-light text-[#94634F] italic tracking-wide">
+            Escribime y diseñamos la estrategia a tu medida.
           </p>
         </div>
 
