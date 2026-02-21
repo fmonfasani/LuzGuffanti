@@ -21,22 +21,39 @@ export function Contact() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitError("");
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || "Error al enviar el mensaje");
+      }
+
       setSubmitSuccess(true);
       setFormData({ name: "", email: "", message: "" });
 
-      // Reset success message after 5 seconds
       setTimeout(() => {
         setSubmitSuccess(false);
       }, 5000);
-    }, 1000);
+    } catch (err: unknown) {
+      const errorMessage =
+        err instanceof Error
+          ? err.message
+          : "Error al enviar el mensaje. Intentá de nuevo.";
+      setSubmitError(errorMessage);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -126,6 +143,12 @@ export function Contact() {
               {submitSuccess && (
                 <div className="mt-4 p-4 bg-green-100 text-green-700 rounded-lg text-center font-medium">
                   ¡Mensaje enviado con éxito! Me pondré en contacto pronto.
+                </div>
+              )}
+
+              {submitError && (
+                <div className="mt-4 p-4 bg-red-100 text-red-700 rounded-lg text-center font-medium">
+                  {submitError}
                 </div>
               )}
             </form>

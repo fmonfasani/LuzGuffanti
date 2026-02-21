@@ -12,7 +12,7 @@ export function Tools() {
     >
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-display font-bold text-center text-primary mb-16 uppercase tracking-widest">
-          MI EQUIPO DE TRABAJO
+          MIS EQUIPOS DE TRABAJO
         </h2>
 
         {/* Fila Superior: Icons Realistas */}
@@ -58,7 +58,7 @@ export function Tools() {
                 transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
                 className="flex flex-col items-center justify-center text-center gap-4 p-8 bg-card-light/30 dark:bg-card-dark/30 backdrop-blur-sm rounded-3xl border border-primary/5 hover:border-primary/20 transition-all duration-300"
               >
-                <div className="relative w-16 h-16 flex-shrink-0">
+                <div className="relative w-32 h-32 flex-shrink-0">
                   <Image
                     src={tool.imageSrc}
                     alt={tool.name}

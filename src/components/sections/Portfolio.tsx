@@ -25,7 +25,7 @@ export function Portfolio() {
         </h2>
 
         {/* Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mb-12 max-w-5xl mx-auto">
           {portfolioCategories.map((category) => (
             <PortfolioTab
               key={category.id}

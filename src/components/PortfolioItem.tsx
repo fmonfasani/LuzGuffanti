@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { Play, Pause, Volume2, VolumeX } from "lucide-react";
+import { Volume2, VolumeX } from "lucide-react";
 
 type PortfolioItemProps = {
   videoSrc?: string;
@@ -146,6 +146,7 @@ export function PortfolioItem({ videoSrc, alt }: PortfolioItemProps) {
             muted={isMuted}
             playsInline
             controls={showControls}
+            controlsList="nodownload"
             poster={getCloudinaryPoster(videoSrc)}
           />
 
@@ -156,27 +157,10 @@ export function PortfolioItem({ videoSrc, alt }: PortfolioItemProps) {
           >
             {isMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
           </button>
-
-          {/* Overlay de Play (solo se muestra si está pausado o no hay controles activos) */}
-          {(!showControls || !isPlaying) && (
-            <div
-              className={`absolute inset-0 bg-black/20 flex items-center justify-center transition-opacity duration-300 ${isPlaying ? "opacity-0 group-hover:opacity-100" : "opacity-100"}`}
-            >
-              <div className="bg-white/20 backdrop-blur-md rounded-full p-4 border border-white/30 transform transition-transform group-hover:scale-110">
-                {isPlaying ? (
-                  <Pause className="text-white w-8 h-8 fill-white" />
-                ) : (
-                  <Play className="text-white w-8 h-8 fill-white ml-1" />
-                )}
-              </div>
-            </div>
-          )}
         </>
       ) : (
         <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center bg-gray-50 dark:bg-neutral-800">
-          <div className="w-12 h-12 rounded-full border-2 border-dashed border-gray-300 dark:border-gray-600 mb-4 flex items-center justify-center">
-            <Play className="w-5 h-5 text-gray-400 opacity-50" />
-          </div>
+          <div className="w-12 h-12 rounded-full border-2 border-dashed border-gray-300 dark:border-gray-600 mb-4 flex items-center justify-center"></div>
           <span className="text-gray-500 font-medium text-sm">{alt}</span>
           <span className="text-[10px] text-gray-400 mt-1 uppercase tracking-tighter">
             Disponible próximamente
