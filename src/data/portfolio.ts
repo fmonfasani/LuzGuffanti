@@ -5,23 +5,19 @@ export const portfolioCategories = [
     label: "UGC",
     items: [
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769466428/1_mylltr.mov",
+        playbackId: "CBgXmn02XEFgA2AgJxlXBK5UzqxqxBoHRUS2801KYO714",
         alt: "UGC 1",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769466428/4_olytf0.mov",
+        playbackId: "pIZNsif9PN8PA1Qvqhe00vexQSiViNCG9HfUKDsTBRxY",
         alt: "UGC 2",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769466426/3_gvwrjf.mov",
+        playbackId: "DhFuZmB2Co8IJRuz401uSwO3Tth5fVKkASuFeD5OKNNA",
         alt: "UGC 3",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769466420/2_me2owh.mp4",
+        playbackId: "xylBGpsGj4EtmULRuRiK6RQeBQ5ACxw0000r9OkwAtysk",
         alt: "UGC 4",
       },
     ],

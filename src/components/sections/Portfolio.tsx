@@ -40,8 +40,9 @@ export function Portfolio() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {activeCategoryData.items.map((item, index) => (
             <PortfolioItem
-              key={`${activeCategory}-${index}-${item.videoSrc || "empty"}`}
+              key={`${activeCategory}-${index}-${item.playbackId || item.videoSrc || "empty"}`}
               videoSrc={item.videoSrc}
+              playbackId={item.playbackId}
               alt={item.alt}
             />
           ))}

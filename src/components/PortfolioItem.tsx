@@ -2,13 +2,15 @@
 
 import { useState, useRef, useEffect } from "react";
 import { Volume2, VolumeX } from "lucide-react";
+import MuxPlayer from "@mux/mux-player-react";
 
 type PortfolioItemProps = {
   videoSrc?: string;
+  playbackId?: string;
   alt: string;
 };
 
-export function PortfolioItem({ videoSrc, alt }: PortfolioItemProps) {
+export function PortfolioItem({ videoSrc, playbackId, alt }: PortfolioItemProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
   const [isHovered, setIsHovered] = useState(false);
@@ -96,7 +98,7 @@ export function PortfolioItem({ videoSrc, alt }: PortfolioItemProps) {
   useEffect(() => {
     if (videoRef.current && isCloudinary) {
       if (isHovered) {
-        videoRef.current.play().catch(() => {});
+        videoRef.current.play().catch(() => { });
         setIsPlaying(true);
       } else if (!showControls) {
         videoRef.current.pause();
@@ -112,6 +114,31 @@ export function PortfolioItem({ videoSrc, alt }: PortfolioItemProps) {
       videoRef.current.controls = showControls;
     }
   }, [isMuted, showControls]);
+
+  // Mux Player rendering logic
+  if (playbackId) {
+    return (
+      <div
+        className="relative group aspect-[9/16] rounded-xl overflow-hidden bg-white dark:bg-neutral-900 border border-gray-100 dark:border-gray-800 shadow-md transition-all hover:shadow-xl hover:-translate-y-1 cursor-pointer"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <MuxPlayer
+          streamType="on-demand"
+          playbackId={playbackId}
+          poster={`https://image.mux.com/${playbackId}/thumbnail.jpg`}
+          autoPlay={isHovered ? "muted" : false}
+          loop
+          muted
+          className="w-full h-full object-cover"
+          style={{ aspectRatio: "9/16" }}
+        />
+        <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent transition-opacity duration-300 opacity-0 group-hover:opacity-100 flex items-end">
+          <span className="text-white font-medium text-sm">{alt}</span>
+        </div>
+      </div>
+    );
+  }
 
   if (isYoutube && videoSrc) {
     return (
@@ -170,3 +197,4 @@ export function PortfolioItem({ videoSrc, alt }: PortfolioItemProps) {
     </div>
   );
 }
+
