@@ -38,7 +38,7 @@ export function Portfolio() {
 
         {/* Portfolio Items Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {activeCategoryData.items.map((item, index) => (
+          {activeCategoryData.items.map((item: any, index) => (
             <PortfolioItem
               key={`${activeCategory}-${index}-${item.playbackId || item.videoSrc || "empty"}`}
               videoSrc={item.videoSrc}
