@@ -117,6 +117,7 @@ export function PortfolioItem({ videoSrc, playbackId, alt }: PortfolioItemProps)
 
   // Mux Player rendering logic
   if (playbackId) {
+    console.log(`[PortfolioItem] Using MUX for: ${alt}`, { playbackId });
     return (
       <div
         className="relative group aspect-[9/16] rounded-xl overflow-hidden bg-white dark:bg-neutral-900 border border-gray-100 dark:border-gray-800 shadow-md transition-all hover:shadow-xl hover:-translate-y-1 cursor-pointer"
@@ -138,6 +139,10 @@ export function PortfolioItem({ videoSrc, playbackId, alt }: PortfolioItemProps)
         </div>
       </div>
     );
+  }
+
+  if (videoSrc) {
+    console.log(`[PortfolioItem] Using CLOUDINARY/EXTERNAL for: ${alt}`, { videoSrc });
   }
 
   if (isYoutube && videoSrc) {

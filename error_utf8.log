@@ -1,0 +1,56 @@
+﻿node.exe :  ΓÜá Warning: Next.js inferred your workspace root, 
+but it may not be correct.
+En C:\Program Files\nodejs\npx.ps1: 29 Carácter: 3
++   & $NODE_EXE $NPX_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ( ΓÜá Warning: N...no 
+   t be correct.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ We detected multiple lockfiles and selected the directory of 
+C:\Users\fmonf\package-lock.json as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your 
+Next.js config, or consider removing one of the lockfiles if it's 
+not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-confi
+g-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * C:\Users\fmonf\Desktop\Software Enginnering LAPTOP\Agencia 
+B2B\LuzGuffanti\package-lock.json
+   * C:\Users\fmonf\Desktop\Software Enginnering LAPTOP\Agencia 
+B2B\package-lock.json
+
+   Γû▓ Next.js 15.5.9
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully in 2.5s
+   Skipping linting
+   Checking validity of types ...
+   Collecting page data ...
+Error: Missing API key. Pass it to the constructor `new 
+Resend("re_123")`
+    at new au (C:\Users\fmonf\Desktop\Software Enginnering 
+LAPTOP\Agencia 
+B2B\LuzGuffanti\.next\server\app\api\contact\route.js:6:28130)
+    at 54147 (C:\Users\fmonf\Desktop\Software Enginnering 
+LAPTOP\Agencia 
+B2B\LuzGuffanti\.next\server\app\api\contact\route.js:6:30303)
+    at c (C:\Users\fmonf\Desktop\Software Enginnering 
+LAPTOP\Agencia 
+B2B\LuzGuffanti\.next\server\webpack-runtime.js:1:128)
+    at <unknown> (C:\Users\fmonf\Desktop\Software Enginnering 
+LAPTOP\Agencia 
+B2B\LuzGuffanti\.next\server\app\api\contact\route.js:27:64215)
+    at c.X (C:\Users\fmonf\Desktop\Software Enginnering 
+LAPTOP\Agencia 
+B2B\LuzGuffanti\.next\server\webpack-runtime.js:1:1206)
+    at <unknown> (C:\Users\fmonf\Desktop\Software Enginnering 
+LAPTOP\Agencia 
+B2B\LuzGuffanti\.next\server\app\api\contact\route.js:27:64197)
+    at Object.<anonymous> (C:\Users\fmonf\Desktop\Software 
+Enginnering LAPTOP\Agencia 
+B2B\LuzGuffanti\.next\server\app\api\contact\route.js:27:64247)
+
+> Build error occurred
+[Error: Failed to collect page data for /api/contact] { type: 
+'Error' }

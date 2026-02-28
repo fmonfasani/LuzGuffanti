@@ -12,6 +12,8 @@ type MuxPortfolioItemProps = {
 export function MuxPortfolioItem({ playbackId, alt, poster }: MuxPortfolioItemProps) {
     const [isHovered, setIsHovered] = useState(false);
 
+    console.log(`[MuxPortfolioItem] Initializing video: ${alt}`, { playbackId });
+
     const thumbnailBase = `https://image.mux.com/${playbackId}/thumbnail.jpg`;
     const defaultPoster = poster || `${thumbnailBase}?time=0`;
 
