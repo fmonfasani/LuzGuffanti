@@ -20,23 +20,40 @@ export function PortfolioItem({ videoSrc, playbackId, alt }: PortfolioItemProps)
   const cloudName =
     process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME || "ddc5jpwq7";
 
-  const getCloudinaryUrl = (publicId: string) => {
-    if (!publicId) return "";
-    if (publicId.startsWith("http")) {
+  const getVideoUrl = (urlOrId: string) => {
+    if (!urlOrId) return "";
+    if (urlOrId.startsWith("http")) {
       // Si ya es una URL de Cloudinary, nos aseguramos de que tenga f_auto,q_auto
       if (
-        publicId.includes("cloudinary.com") &&
-        !publicId.includes("/f_auto,q_auto/")
+        urlOrId.includes("cloudinary.com") &&
+        !urlOrId.includes("/f_auto,q_auto/")
       ) {
-        return publicId.replace("/upload/", "/upload/f_auto,q_auto/");
+        return urlOrId.replace("/upload/", "/upload/f_auto,q_auto/");
       }
-      return publicId;
+      return urlOrId;
     }
-    return `https://res.cloudinary.com/${cloudName}/video/upload/f_auto,q_auto/${publicId}`;
+    return `https://res.cloudinary.com/${cloudName}/video/upload/f_auto,q_auto/${urlOrId}`;
   };
 
-  const getCloudinaryPoster = (urlOrId: string) => {
+  const getVideoPoster = (urlOrId: string) => {
     if (!urlOrId) return "";
+
+    // ImageKit logic
+    if (urlOrId.includes("imagekit.io")) {
+      // Try to get thumbnail by replacing ik-video.mp4 with ik-thumbnail.jpg
+      // or similar patterns. If it doesn't match, we return the URL and let the browser handle it.
+      const baseUrl = urlOrId.split('?')[0];
+      if (baseUrl.endsWith(".mp4") || baseUrl.endsWith(".mov") || baseUrl.endsWith(".webm")) {
+        // For ImageKit, if it ends with ik-video.mp4, replace it
+        if (baseUrl.includes("ik-video.mp4")) {
+          return urlOrId.replace("ik-video.mp4", "ik-thumbnail.jpg");
+        }
+        // Otherwise try replacing extension
+        return urlOrId.replace(/\.(mp4|mov|webm)(\?|$)/, ".jpg$2");
+      }
+      return urlOrId;
+    }
+
     let baseUrl = "";
     if (urlOrId.startsWith("http")) {
       baseUrl = urlOrId;
@@ -44,10 +61,14 @@ export function PortfolioItem({ videoSrc, playbackId, alt }: PortfolioItemProps)
       baseUrl = `https://res.cloudinary.com/${cloudName}/video/upload/${urlOrId}`;
     }
 
-    // Transformamos en imagen (JPG) y buscamos el frame de inicio
-    return baseUrl
-      .replace("/video/upload/", "/video/upload/so_auto,f_jpg,q_auto/")
-      .replace(/\.[^/.]+$/, ".jpg"); // Cambia la extensión a .jpg
+    // Transformamos en imagen (JPG) y buscamos el frame de inicio para Cloudinary
+    if (baseUrl.includes("cloudinary.com")) {
+      return baseUrl
+        .replace("/video/upload/", "/video/upload/so_auto,f_jpg,q_auto/")
+        .replace(/\.[^/.]+$/, ".jpg"); // Cambia la extensión a .jpg
+    }
+
+    return baseUrl;
   };
 
   const isExternal = videoSrc?.startsWith("http");
@@ -142,7 +163,7 @@ export function PortfolioItem({ videoSrc, playbackId, alt }: PortfolioItemProps)
   }
 
   if (videoSrc) {
-    console.log(`[PortfolioItem] Using CLOUDINARY/EXTERNAL for: ${alt}`, { videoSrc });
+    console.log(`[PortfolioItem] Using VIDEO for: ${alt}`, { videoSrc });
   }
 
   if (isYoutube && videoSrc) {
@@ -171,7 +192,7 @@ export function PortfolioItem({ videoSrc, playbackId, alt }: PortfolioItemProps)
         <>
           <video
             ref={videoRef}
-            src={getCloudinaryUrl(videoSrc)}
+            src={getVideoUrl(videoSrc)}
             className="w-full h-full object-cover"
             loop
             autoPlay
@@ -179,7 +200,7 @@ export function PortfolioItem({ videoSrc, playbackId, alt }: PortfolioItemProps)
             playsInline
             controls={showControls}
             controlsList="nodownload"
-            poster={getCloudinaryPoster(videoSrc)}
+            poster={getVideoPoster(videoSrc)}
           />
 
           {/* Botón Flotante de Sonido */}

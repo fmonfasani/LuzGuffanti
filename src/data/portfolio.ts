@@ -6,76 +6,68 @@ export const portfolioCategories = [
     label: "UGC",
     items: [
       {
-        playbackId: "CBgXmn02XEFgA2AgJxlXBK5UzqxqxBoHRUS2801KYO714",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/1.UGC/1.mov/ik-video.mp4?updatedAt=1772316717091",
         alt: "UGC 1",
       },
       {
-        playbackId: "pIZNsif9PN8PA1Qvqhe00vexQSiViNCG9HfUKDsTBRxY",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/1.UGC/2.mp4?updatedAt=1772316716573",
         alt: "UGC 2",
       },
       {
-        playbackId: "DhFuZmB2Co8IJRuz401uSwO3Tth5fVKkASuFeD5OKNNA",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/1.UGC/3.mov/ik-video.mp4?updatedAt=1772316716855",
         alt: "UGC 3",
       },
       {
-        playbackId: "xylBGpsGj4EtmULRuRiK6RQeBQ5ACxw0000r9OkwAtysk",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/1.UGC/4.mov/ik-video.mp4?updatedAt=1772316716850",
         alt: "UGC 4",
       },
     ],
   },
 
-  // 2. Jetsmart
+  // 2. Empresas y Servicios
   {
-    id: "jetsmart",
-    label: "Jetsmart",
+    id: "empresas-servicios",
+    label: "Empresas y Servicios",
     items: [
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769468285/1_axgigc.mov",
-        alt: "JetSmart 1",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/2.%20Empresas%20&%20Servicios/1.mov/ik-video.mp4?updatedAt=1772316474913",
+        alt: "Empresas y Servicios 1",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769468283/2_l7w67a.mov",
-        alt: "JetSmart 2",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/2.%20Empresas%20&%20Servicios/2.mov/ik-video.mp4?updatedAt=1772316475270",
+        alt: "Empresas y Servicios 2",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769468281/4_wpcdcd.mov",
-        alt: "JetSmart 3",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/2.%20Empresas%20&%20Servicios/3.mov/ik-video.mp4?updatedAt=1772316471107",
+        alt: "Empresas y Servicios 3",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769468276/3_t3fwtt.mov",
-        alt: "JetSmart 4",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/1.UGC/2.mp4?updatedAt=1772316716573",
+        alt: "Empresas y Servicios 4",
       },
     ],
   },
 
-  // 3. Empresas y Servicios
+  // 3. Jest_Smart
   {
-    id: "institucional",
-    label: "Empresas y Servicios",
+    id: "jetsmart",
+    label: "Jest_Smart",
     items: [
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769466638/1_gzfwkv.mov",
-        alt: "Institucional 1",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/3.Jetsmart/1.mov/ik-video.mp4?updatedAt=1772316662448",
+        alt: "JetSmart 1",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769466635/2_tbeizt.mov",
-        alt: "Institucional 2",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/3.Jetsmart/2.mov/ik-video.mp4?updatedAt=1772316664309",
+        alt: "JetSmart 2",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769466634/3_cactvx.mov",
-        alt: "Institucional 3",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/3.Jetsmart/3.mov/ik-video.mp4?updatedAt=1772316635457",
+        alt: "JetSmart 3",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769466659/4_shc8b4.mov",
-        alt: "Institucional 4",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/3.Jetsmart/4.mov/ik-video.mp4?updatedAt=1772316639653",
+        alt: "JetSmart 4",
       },
     ],
   },
@@ -86,51 +78,43 @@ export const portfolioCategories = [
     label: "Turismo",
     items: [
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769468425/1_japwxv.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/4.%20Turismo/1.mov/ik-video.mp4?updatedAt=1772316857053",
         alt: "Turismo 1",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769468395/2_hvmipg.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/4.%20Turismo/2.mov/ik-video.mp4?updatedAt=1772316841407",
         alt: "Turismo 2",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769468405/3_hdpwbo.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/4.%20Turismo/3.mov/ik-video.mp4?updatedAt=1772316848906",
         alt: "Turismo 3",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769468397/4_huvxpj.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/4.%20Turismo/4.mov/ik-video.mp4?updatedAt=1772316839513",
         alt: "Turismo 4",
       },
     ],
   },
 
-  // 5. Real state
+  // 5. Real_Estate
   {
     id: "real-estate",
-    label: "Real state",
+    label: "Real_Estate",
     items: [
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769470294/1_onz3ua.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/5.%20Real%20state/1.mov/ik-video.mp4?updatedAt=1772316946713",
         alt: "Real Estate 1",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769470321/2_ygefg6.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/5.%20Real%20state/2.mov/ik-video.mp4?updatedAt=1772316945931",
         alt: "Real Estate 2",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769470364/3_ldknit.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/5.%20Real%20state/3.mov/ik-video.mp4?updatedAt=1772316948007",
         alt: "Real Estate 3",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769516872/4_yeilwn.mp4",
+        videoSrc: "",
         alt: "Real Estate 4",
       },
     ],
@@ -142,107 +126,91 @@ export const portfolioCategories = [
     label: "Eventos",
     items: [
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514057/1_lk0j3z.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/6.%20Eventos/1.mov/ik-video.mp4?updatedAt=1772319492060",
         alt: "Evento 1",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514052/2_cwyjci.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/6.%20Eventos/2.mov/ik-video.mp4?updatedAt=1772319482992",
         alt: "Evento 2",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514053/3_sdluix.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/6.%20Eventos/3.mov/ik-video.mp4?updatedAt=1772319484174",
         alt: "Evento 3",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514057/4_np1hpr.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/6.%20Eventos/4.mov/ik-video.mp4?updatedAt=1772319500413",
         alt: "Evento 4",
       },
     ],
   },
 
-  // 7. Hotelería
+  // 7. Hoteleria
   {
     id: "hoteleria",
-    label: "Hotelería",
+    label: "Hoteleria",
     items: [
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514359/1_rgpvzn.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/7.%20Hoteler%C3%ADa/1.mov/ik-video.mp4?updatedAt=1772319586175",
         alt: "Hotelería 1",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514349/2_tetj3n.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/7.%20Hoteler%C3%ADa/2.mov/ik-video.mp4?updatedAt=1772319579281",
         alt: "Hotelería 2",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514334/3_nfbdfd.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/7.%20Hoteler%C3%ADa/3.mov/ik-video.mp4?updatedAt=1772319557237",
         alt: "Hotelería 3",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769519935/4_ia7t31.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/7.%20Hoteler%C3%ADa/4.mov/ik-video.mp4?updatedAt=1772319560437",
         alt: "Hotelería 4",
       },
     ],
   },
 
-  // 8. Gastronomía
+  // 8. Gastronomia
   {
     id: "gastronomia",
-    label: "Gastronomía",
+    label: "Gastronomia",
     items: [
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514491/1_qmxqqy.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/8.%20Gastronom%C3%ADa/1.mov/ik-video.mp4?updatedAt=1772319661017",
         alt: "Gastronomía 1",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769465922/2_gnjsfr.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/8.%20Gastronom%C3%ADa/2.mov/ik-video.mp4?updatedAt=1772319646503",
         alt: "Gastronomía 2",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514471/3_dehvwa.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/8.%20Gastronom%C3%ADa/3.mov/ik-video.mp4?updatedAt=1772319653717",
         alt: "Gastronomía 3",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769465920/4_e5ulvz.mp4",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/8.%20Gastronom%C3%ADa/4.mp4?updatedAt=1772319645872",
         alt: "Gastronomía 4",
       },
     ],
   },
 
-  // 9. Travels
+  // 9. Travel Trends
   {
-    id: "travels",
-    label: "Travels",
+    id: "travel-trends",
+    label: "Travel Trends",
     items: [
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514659/1_bajqqt.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/9.%20Travel/1.mov/ik-video.mp4?updatedAt=1772319741167",
         alt: "Travels 1",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514666/2_seknkq.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/9.%20Travel/1.mov/ik-video.mp4?updatedAt=1772319741167",
         alt: "Travels 2",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514666/3_gnjvpp.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/9.%20Travel/3.mov/ik-video.mp4?updatedAt=1772319730395",
         alt: "Travels 3",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514638/4_dlrvkt.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/9.%20Travel/4.mov/ik-video.mp4?updatedAt=1772319724259",
         alt: "Travels 4",
       },
     ],
@@ -254,23 +222,19 @@ export const portfolioCategories = [
     label: "Ecommerce",
     items: [
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769516194/1_m7uvje.mp4",
+        videoSrc: "",
         alt: "Ecommerce 1",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769514992/2_dknz9d.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/9.%20Travel/4.mov/ik-video.mp4?updatedAt=1772319724259",
         alt: "Ecommerce 2",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769515001/3_vkiuzr.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/10.%20Ecommerce/3.mov/ik-video.mp4?updatedAt=1772319786182",
         alt: "Ecommerce 3",
       },
       {
-        videoSrc:
-          "https://res.cloudinary.com/ddc5jpwq7/video/upload/v1769515007/4_mrfq2f.mov",
+        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/10.%20Ecommerce/4.mov/ik-video.mp4?updatedAt=1772319784601",
         alt: "Ecommerce 4",
       },
     ],
