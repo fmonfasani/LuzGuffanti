@@ -78,7 +78,7 @@ export const portfolioCategories = [
     label: "Turismo",
     items: [
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/3.%20Jetsmart/4.mp4?updatedAt=1772332420720",
+        videoSrc: "https://ik.imagekit.io/11yjgrsf2/4.%20Turismo/1.mp4",
         alt: "Turismo 1",
       },
       {
@@ -86,7 +86,7 @@ export const portfolioCategories = [
         alt: "Turismo 2",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/4.%20Turismo/2.mp4?updatedAt=1772332445576",
+        videoSrc: "https://ik.imagekit.io/11yjgrsf2/4.%20Turismo/3.mp4",
         alt: "Turismo 3",
       },
       {
