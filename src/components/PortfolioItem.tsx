@@ -41,12 +41,12 @@ export function PortfolioItem({ videoSrc, playbackId, alt }: PortfolioItemProps)
     // ImageKit logic
     if (urlOrId.includes("imagekit.io")) {
       const baseUrl = urlOrId.split('?')[0];
-      // Si ya es un endpoint de video optimizado, probamos con ik-thumbnail.jpg
+      // Si ya usa el endpoint optimizado de video de ImageKit
       if (baseUrl.includes("ik-video.mp4")) {
-        return urlOrId.replace("ik-video.mp4", "ik-thumbnail.jpg");
+        return urlOrId.replace("ik-video.mp4", "ik-thumbnail.jpg?tr=w-400,q-80");
       }
-      // Fallback: usar transformación de ImageKit para capturar el frame 1
-      return `${urlOrId}${urlOrId.includes('?') ? '&' : '?'}tr=f-jpg,so-1,w-400`;
+      // Fallback: transformación estándar de ImageKit para generar miniatura
+      return `${baseUrl}?tr=so-1,w-400,f-jpg`;
     }
 
     let baseUrl = "";
@@ -189,15 +189,15 @@ export function PortfolioItem({ videoSrc, playbackId, alt }: PortfolioItemProps)
       {videoSrc ? (
         <>
           <video
+            key={videoSrc} // CRÍTICO: Fuerza al navegador a recargar el video de cero
             ref={videoRef}
             src={getVideoUrl(videoSrc)}
             className="w-full h-full object-cover"
             loop
             autoPlay
-            muted={isMuted}
+            muted
             playsInline
-            controls={showControls}
-            controlsList="nodownload"
+            preload="auto"
             poster={getVideoPoster(videoSrc)}
           />
 
