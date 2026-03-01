@@ -6,19 +6,19 @@ export const portfolioCategories = [
     label: "UGC",
     items: [
       {
-        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/1.UGC/1.mp4?updatedAt=1772330451001",
+        videoSrc: "https://ik.imagekit.io/11yjgrsf2/UGC/1.mp4",
         alt: "UGC 1",
       },
       {
-        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/1.UGC/2.mp4?updatedAt=1772330442463",
+        videoSrc: "https://ik.imagekit.io/11yjgrsf2/UGC/4.mp4",
         alt: "UGC 2",
       },
       {
-        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/1.UGC/3.mp4?updatedAt=1772330445709",
+        videoSrc: "https://ik.imagekit.io/11yjgrsf2/UGC/3.mp4",
         alt: "UGC 3",
       },
       {
-        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/1.UGC/4.mp4?updatedAt=1772330450348",
+        videoSrc: "https://ik.imagekit.io/11yjgrsf2/UGC/2.mp4",
         alt: "UGC 4",
       },
     ],
