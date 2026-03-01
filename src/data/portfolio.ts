@@ -30,15 +30,15 @@ export const portfolioCategories = [
     label: "Empresas y Servicios",
     items: [
       {
-        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/2.%20Empresas%20&%20Servicios/1.mp4?updatedAt=1772330495183",
+        videoSrc: "https://ik.imagekit.io/11yjgrsf2/2.%20Empresas%20&%20Servicios/1.mp4",
         alt: "Empresas y Servicios 1",
       },
       {
-        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/2.%20Empresas%20&%20Servicios/2.mp4?updatedAt=1772330496368",
+        videoSrc: "https://ik.imagekit.io/11yjgrsf2/2.%20Empresas%20&%20Servicios/2.mp4",
         alt: "Empresas y Servicios 2",
       },
       {
-        videoSrc: "https://ik.imagekit.io/uvy7nabre/Luy_Guffanti/2.%20Empresas%20&%20Servicios/3.mp4?updatedAt=1772330491795",
+        videoSrc: "https://ik.imagekit.io/11yjgrsf2/2.%20Empresas%20&%20Servicios/3.mp4",
         alt: "Empresas y Servicios 3",
       },
       {
