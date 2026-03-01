@@ -198,11 +198,11 @@ export const portfolioCategories = [
     label: "Travel Trends",
     items: [
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/8.%20Gastronom%C3%ADa/4.mp4?updatedAt=1772332562817",
+        videoSrc: "https://ik.imagekit.io/11yjgrsf2/9.%20Travel/1.mp4?updatedAt=1772332683551",
         alt: "Travels 1",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/8.%20Gastronom%C3%ADa/4.mp4?updatedAt=1772332562817",
+        videoSrc: "https://ik.imagekit.io/11yjgrsf2/9.%20Travel/2.mp4?updatedAt=1772332676701",
         alt: "Travels 2",
       },
       {
