@@ -117,16 +117,24 @@ export function PortfolioItem({ videoSrc, playbackId, alt }: PortfolioItemProps)
   };
 
   useEffect(() => {
-    if (videoRef.current && isCloudinary) {
-      if (isHovered) {
-        videoRef.current.play().catch(() => { });
-        setIsPlaying(true);
-      } else if (!showControls) {
-        videoRef.current.pause();
-        setIsPlaying(false);
+    const video = videoRef.current;
+    if (!video || isYoutube) return;
+
+    if (isHovered) {
+      // Intentar reproducir siempre mutado para cumplir con políticas del navegador
+      video.muted = isMuted;
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch((error) => {
+          console.log("[PortfolioItem] Autoplay prevented:", error);
+        });
       }
+      setIsPlaying(true);
+    } else if (!showControls) {
+      video.pause();
+      setIsPlaying(false);
     }
-  }, [isHovered, isCloudinary, showControls]);
+  }, [isHovered, isYoutube, showControls, isMuted]);
 
   // Sincronización forzada con el elemento DOM
   useEffect(() => {
