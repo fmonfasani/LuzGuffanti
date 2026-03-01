@@ -40,18 +40,13 @@ export function PortfolioItem({ videoSrc, playbackId, alt }: PortfolioItemProps)
 
     // ImageKit logic
     if (urlOrId.includes("imagekit.io")) {
-      // Try to get thumbnail by replacing ik-video.mp4 with ik-thumbnail.jpg
-      // or similar patterns. If it doesn't match, we return the URL and let the browser handle it.
       const baseUrl = urlOrId.split('?')[0];
-      if (baseUrl.endsWith(".mp4") || baseUrl.endsWith(".mov") || baseUrl.endsWith(".webm")) {
-        // For ImageKit, if it ends with ik-video.mp4, replace it
-        if (baseUrl.includes("ik-video.mp4")) {
-          return urlOrId.replace("ik-video.mp4", "ik-thumbnail.jpg");
-        }
-        // Otherwise try replacing extension
-        return urlOrId.replace(/\.(mp4|mov|webm)(\?|$)/, ".jpg$2");
+      // Si ya es un endpoint de video optimizado, probamos con ik-thumbnail.jpg
+      if (baseUrl.includes("ik-video.mp4")) {
+        return urlOrId.replace("ik-video.mp4", "ik-thumbnail.jpg");
       }
-      return urlOrId;
+      // Fallback: usar transformación de ImageKit para capturar el frame 1
+      return `${urlOrId}${urlOrId.includes('?') ? '&' : '?'}tr=f-jpg,so-1,w-400`;
     }
 
     let baseUrl = "";
@@ -61,11 +56,11 @@ export function PortfolioItem({ videoSrc, playbackId, alt }: PortfolioItemProps)
       baseUrl = `https://res.cloudinary.com/${cloudName}/video/upload/${urlOrId}`;
     }
 
-    // Transformamos en imagen (JPG) y buscamos el frame de inicio para Cloudinary
+    // Cloudinary logic
     if (baseUrl.includes("cloudinary.com")) {
       return baseUrl
         .replace("/video/upload/", "/video/upload/so_auto,f_jpg,q_auto/")
-        .replace(/\.[^/.]+$/, ".jpg"); // Cambia la extensión a .jpg
+        .replace(/\.[^/.]+$/, ".jpg");
     }
 
     return baseUrl;
@@ -120,21 +115,16 @@ export function PortfolioItem({ videoSrc, playbackId, alt }: PortfolioItemProps)
     const video = videoRef.current;
     if (!video || isYoutube) return;
 
+    // Solo intervenimos si el usuario interactúa (hover) para asegurar la reproducción
     if (isHovered) {
-      // Intentar reproducir siempre mutado para cumplir con políticas del navegador
-      video.muted = isMuted;
       const playPromise = video.play();
       if (playPromise !== undefined) {
-        playPromise.catch((error) => {
-          console.log("[PortfolioItem] Autoplay prevented:", error);
+        playPromise.catch(() => {
+          // Ignorar errores de autoplay del navegador
         });
       }
-      setIsPlaying(true);
-    } else if (!showControls) {
-      video.pause();
-      setIsPlaying(false);
     }
-  }, [isHovered, isYoutube, showControls, isMuted]);
+  }, [isHovered, isYoutube]);
 
   // Sincronización forzada con el elemento DOM
   useEffect(() => {
