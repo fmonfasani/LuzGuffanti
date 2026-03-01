@@ -1,16 +1,17 @@
+import { Analytics } from "@vercel/analytics/next"
 import './globals.css'
 import { Cormorant_Garamond, Karla } from 'next/font/google'
 
-const cormorant = Cormorant_Garamond({ 
-  subsets: ['latin'], 
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-display' 
+  variable: '--font-display'
 })
 
-const karla = Karla({ 
-  subsets: ['latin'], 
+const karla = Karla({
+  subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-body' 
+  variable: '--font-body'
 })
 
 export const metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="es">
       <body className={`${cormorant.variable} ${karla.variable} font-body`}>
         {children}
+        <Analytics />
       </body>
     </html>
   )
