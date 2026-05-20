@@ -47,3 +47,6 @@ next-env.d.ts
 # cloudflare tunnel (no necesario en repo)
 cloudflared.exe
 download_cf.js
+
+# media files (too large for git)
+/media/

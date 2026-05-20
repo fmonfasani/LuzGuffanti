@@ -1,0 +1,15 @@
+services:
+  app:
+    container_name: luzguffanti-app
+    build: .
+    restart: unless-stopped
+    ports:
+      - "3140:3000"
+    volumes:
+      - sqlite_data:/app/data
+    environment:
+      - DATABASE_URL=file:/app/data/prod.db
+      - NODE_ENV=production
+
+volumes:
+  sqlite_data:

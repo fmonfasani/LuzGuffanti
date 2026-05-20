@@ -1,0 +1,12 @@
+node_modules
+.next
+.git
+*.md
+.env*
+coverage
+.DS_Store
+build_log.txt
+error.log
+error_utf8.log
+docs
+prisma/dev.db

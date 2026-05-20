@@ -25,16 +25,17 @@ export function About() {
               SOBRE MÍ
             </h2>
             <p className="text-gray-700 dark:text-gray-300 mb-4 text-lg leading-relaxed">
-              Soy creadora de contenido UGC, filmmaker & editora de videos.
-              Trabajo con marcas y empresas que buscan comunicar su esencia de
-              forma creativa, estética, auténtica y profesional.
+              Soy creadora de contenido UGC, filmmaker, editora de videos y
+              licenciada en Relaciones Públicas. Trabajo con marcas y empresas
+              que buscan comunicar su esencia de forma creativa, estética,
+              auténtica y estratégica.
             </p>
             <p className="text-gray-700 dark:text-gray-300 mb-4 text-lg leading-relaxed">
               Me especializo en la producción de contenido para redes sociales,
-              combinando una mirada estratégica con un fuerte enfoque visual y
-              un profundo conocimiento de las tendencias digitales. Mi objetivo
-              es crear piezas que conecten con la audiencia y generen resultados
-              reales.
+              combinando una mirada estratégica en comunicación con un fuerte
+              enfoque visual y un profundo conocimiento de las tendencias
+              digitales. Mi objetivo es crear piezas que conecten con la
+              audiencia y generen resultados reales.
             </p>
             <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
               Viajar es una de mis mayores fuentes de inspiración: me permite

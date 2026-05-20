@@ -1,4 +1,3 @@
-// Last update: 2026-02-28T17:46:00
 export const portfolioCategories = [
   // 1. UGC
   {
@@ -6,19 +5,19 @@ export const portfolioCategories = [
     label: "UGC",
     items: [
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/UGC/1.mp4",
+        videoSrc: "https://media.luzguffanti.com/1.ugc/1.mp4",
         alt: "UGC 1",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/UGC/4.mp4",
+        videoSrc: "https://media.luzguffanti.com/1.ugc/2.mp4",
         alt: "UGC 2",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/UGC/3.mp4",
+        videoSrc: "https://media.luzguffanti.com/1.ugc/3.mp4",
         alt: "UGC 3",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/UGC/2.mp4",
+        videoSrc: "https://media.luzguffanti.com/1.ugc/4.mp4",
         alt: "UGC 4",
       },
     ],
@@ -30,43 +29,43 @@ export const portfolioCategories = [
     label: "Empresas y Servicios",
     items: [
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/2.%20Empresas%20&%20Servicios/1.mp4",
+        videoSrc: "https://media.luzguffanti.com/2.%20empresas%20y%20servicios/1.mp4",
         alt: "Empresas y Servicios 1",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/2.%20Empresas%20&%20Servicios/2.mp4",
+        videoSrc: "https://media.luzguffanti.com/2.%20empresas%20y%20servicios/2.mp4",
         alt: "Empresas y Servicios 2",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/2.%20Empresas%20&%20Servicios/3.mp4",
+        videoSrc: "https://media.luzguffanti.com/2.%20empresas%20y%20servicios/3.mp4",
         alt: "Empresas y Servicios 3",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/2.%20Empresas%20&%20Servicios/4.mp4",
+        videoSrc: "https://media.luzguffanti.com/2.%20empresas%20y%20servicios/4.mp4",
         alt: "Empresas y Servicios 4",
       },
     ],
   },
 
-  // 3. Jest_Smart
+  // 3. JetSmart
   {
     id: "jetsmart",
-    label: "Jest_Smart",
+    label: "JetSmart",
     items: [
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/3.%20Jetsmart/1.mp4?updatedAt=1772332425641",
+        videoSrc: "https://media.luzguffanti.com/3.%20jetsmart/1.mp4",
         alt: "JetSmart 1",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/3.%20Jetsmart/2.mp4?updatedAt=1772332428950",
+        videoSrc: "https://media.luzguffanti.com/3.%20jetsmart/2.mp4",
         alt: "JetSmart 2",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/3.%20Jetsmart/3.mp4?updatedAt=1772332421313",
+        videoSrc: "https://media.luzguffanti.com/3.%20jetsmart/3.mp4",
         alt: "JetSmart 3",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/3.%20Jetsmart/4.mp4?updatedAt=1772332420720",
+        videoSrc: "https://media.luzguffanti.com/3.%20jetsmart/4.mp4",
         alt: "JetSmart 4",
       },
     ],
@@ -78,164 +77,164 @@ export const portfolioCategories = [
     label: "Turismo",
     items: [
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/4.%20Turismo/1.mp4?updatedAt=1772332457817",
+        videoSrc: "https://media.luzguffanti.com/4.%20turismo/1.mp4",
         alt: "Turismo 1",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/4.%20Turismo/2.mp4?updatedAt=1772332445576",
+        videoSrc: "https://media.luzguffanti.com/4.%20turismo/2.mp4",
         alt: "Turismo 2",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/4.%20Turismo/3.mp4?updatedAt=1772332446173",
+        videoSrc: "https://media.luzguffanti.com/4.%20turismo/3.mp4",
         alt: "Turismo 3",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/4.%20Turismo/4.mp4?updatedAt=1772332443166",
+        videoSrc: "https://media.luzguffanti.com/4.%20turismo/4.mp4",
         alt: "Turismo 4",
       },
     ],
   },
 
-  // 5. Real_Estate
+  // 5. Real Estate
   {
     id: "real-estate",
-    label: "Real_Estate",
+    label: "Real Estate",
     items: [
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/5.%20Real%20state/1.mp4?updatedAt=1772332524794",
+        videoSrc: "https://media.luzguffanti.com/5.%20real%20state/1.mp4",
         alt: "Real Estate 1",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/5.%20Real%20state/2.mp4?updatedAt=1772332523918",
+        videoSrc: "https://media.luzguffanti.com/5.%20real%20state/2.mp4",
         alt: "Real Estate 2",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/5.%20Real%20state/3.mp4?updatedAt=1772332522875",
+        videoSrc: "https://media.luzguffanti.com/5.%20real%20state/3.mp4",
         alt: "Real Estate 3",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/5.%20Real%20state/4.mp4?updatedAt=1772332535043",
+        videoSrc: "https://media.luzguffanti.com/5.%20real%20state/4.mp4",
         alt: "Real Estate 4",
       },
     ],
   },
 
-  // 6. Eventos
+  // 6. Productos
+  {
+    id: "productos",
+    label: "Productos",
+    items: [
+      {
+        videoSrc: "https://media.luzguffanti.com/6.%20Producto/1.mp4",
+        alt: "Productos 1",
+      },
+      {
+        videoSrc: "https://media.luzguffanti.com/6.%20Producto/2.mp4",
+        alt: "Productos 2",
+      },
+      {
+        videoSrc: "https://media.luzguffanti.com/6.%20Producto/3.mp4",
+        alt: "Productos 3",
+      },
+      {
+        videoSrc: "https://media.luzguffanti.com/6.%20Producto/4.mp4",
+        alt: "Productos 4",
+      },
+    ],
+  },
+
+  // 7. Eventos
   {
     id: "eventos",
     label: "Eventos",
     items: [
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/6.%20Eventos/1.mp4?updatedAt=1772332544575",
-        alt: "Evento 1",
+        videoSrc: "https://media.luzguffanti.com/7.%20eventos/1.mp4",
+        alt: "Eventos 1",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/6.%20Eventos/2.mp4?updatedAt=1772332539496",
-        alt: "Evento 2",
+        videoSrc: "https://media.luzguffanti.com/7.%20eventos/2.mp4",
+        alt: "Eventos 2",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/6.%20Eventos/3.mp4?updatedAt=1772332541327",
-        alt: "Evento 3",
+        videoSrc: "https://media.luzguffanti.com/7.%20eventos/3.mp4",
+        alt: "Eventos 3",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/6.%20Eventos/4.mp4?updatedAt=1772332552263",
-        alt: "Evento 4",
+        videoSrc: "https://media.luzguffanti.com/7.%20eventos/4.mp4",
+        alt: "Eventos 4",
       },
     ],
   },
 
-  // 7. Hoteleria
+  // 8. Hoteleria
   {
     id: "hoteleria",
     label: "Hoteleria",
     items: [
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/7.%20Hoteler%C3%ADa/1.mp4?updatedAt=1772332562488",
-        alt: "Hotelería 1",
+        videoSrc: "https://media.luzguffanti.com/8.%20hoteleria/1.mp4",
+        alt: "Hoteleria 1",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/7.%20Hoteler%C3%ADa/2.mp4?updatedAt=1772332558389",
-        alt: "Hotelería 2",
+        videoSrc: "https://media.luzguffanti.com/8.%20hoteleria/2.mp4",
+        alt: "Hoteleria 2",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/7.%20Hoteler%C3%ADa/3%20(1).mp4?updatedAt=1772332546444",
-        alt: "Hotelería 3",
+        videoSrc: "https://media.luzguffanti.com/8.%20hoteleria/3.mp4",
+        alt: "Hoteleria 3",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/7.%20Hoteler%C3%ADa/4.mp4?updatedAt=1772332546194",
-        alt: "Hotelería 4",
+        videoSrc: "https://media.luzguffanti.com/8.%20hoteleria/4.mp4",
+        alt: "Hoteleria 4",
       },
     ],
   },
 
-  // 8. Gastronomia
+  // 9. Gastronomia
   {
     id: "gastronomia",
     label: "Gastronomia",
     items: [
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/8.%20Gastronom%C3%ADa/1.mp4?updatedAt=1772332571342",
-        alt: "Gastronomía 1",
+        videoSrc: "https://media.luzguffanti.com/9.%20gastronomia/1.mp4",
+        alt: "Gastronomia 1",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/8.%20Gastronom%C3%ADa/2.mp4?updatedAt=1772332562085",
-        alt: "Gastronomía 2",
+        videoSrc: "https://media.luzguffanti.com/9.%20gastronomia/2.mp4",
+        alt: "Gastronomia 2",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/8.%20Gastronom%C3%ADa/3.mp4?updatedAt=1772332564350",
-        alt: "Gastronomía 3",
+        videoSrc: "https://media.luzguffanti.com/9.%20gastronomia/3.mp4",
+        alt: "Gastronomia 3",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/8.%20Gastronom%C3%ADa/4.mp4?updatedAt=1772332562817",
-        alt: "Gastronomía 4",
+        videoSrc: "https://media.luzguffanti.com/9.%20gastronomia/4.mp4",
+        alt: "Gastronomia 4",
       },
     ],
   },
 
-  // 9. Travel Trends
+  // 10. Travel Trends
   {
     id: "travel-trends",
     label: "Travel Trends",
     items: [
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/9.%20Travel/1.mp4?updatedAt=1772332683551",
-        alt: "Travels 1",
+        videoSrc: "https://media.luzguffanti.com/10.%20travel%20trends/1%20(1).mp4",
+        alt: "Travel Trends 1",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/9.%20Travel/2.mp4?updatedAt=1772332676701",
-        alt: "Travels 2",
+        videoSrc: "https://media.luzguffanti.com/10.%20travel%20trends/2%20(2).mp4",
+        alt: "Travel Trends 2",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/9.%20Travel/3.mp4?updatedAt=1772332674038",
-        alt: "Travels 3",
+        videoSrc: "https://media.luzguffanti.com/10.%20travel%20trends/3%20(1).mp4",
+        alt: "Travel Trends 3",
       },
       {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/9.%20Travel/4.mp4?updatedAt=1772332682408",
-        alt: "Travels 4",
-      },
-    ],
-  },
-
-  // 10. Ecommerce
-  {
-    id: "ecommerce",
-    label: "Ecommerce",
-    items: [
-      {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/10.%20Ecommerce/1.mp4?updatedAt=1772332626815",
-        alt: "Ecommerce 1",
-      },
-      {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/10.%20Ecommerce/2.mp4?updatedAt=1772332598635",
-        alt: "Ecommerce 2",
-      },
-      {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/10.%20Ecommerce/3.mp4?updatedAt=1772332615395",
-        alt: "Ecommerce 3",
-      },
-      {
-        videoSrc: "https://ik.imagekit.io/11yjgrsf2/10.%20Ecommerce/4.mp4?updatedAt=1772332598528",
-        alt: "Ecommerce 4",
+        videoSrc: "https://media.luzguffanti.com/10.%20travel%20trends/4%20(1).mp4",
+        alt: "Travel Trends 4",
       },
     ],
   },
